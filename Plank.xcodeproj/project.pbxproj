@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,9 +13,13 @@
 		323B1B1E2454BD290001A55B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 323B1B1C2454BD290001A55B /* Main.storyboard */; };
 		323B1B202454BD2F0001A55B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 323B1B1F2454BD2F0001A55B /* Assets.xcassets */; };
 		323B1B232454BD2F0001A55B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 323B1B212454BD2F0001A55B /* LaunchScreen.storyboard */; };
+		323B1B2D2455AF510001A55B /* NeurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323B1B2C2455AF510001A55B /* NeurView.swift */; };
+		323B1B2F2455B2C60001A55B /* AlertButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323B1B2E2455B2C60001A55B /* AlertButton.swift */; };
+		71F18A4A627A210499D23A73 /* Pods_Plank.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AB8307C13F26DC4B8CA4EFD /* Pods_Plank.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0AB8307C13F26DC4B8CA4EFD /* Pods_Plank.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Plank.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		323B1B132454BD290001A55B /* Plank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Plank.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		323B1B162454BD290001A55B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		323B1B182454BD290001A55B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +28,10 @@
 		323B1B1F2454BD2F0001A55B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		323B1B222454BD2F0001A55B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		323B1B242454BD2F0001A55B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		323B1B2C2455AF510001A55B /* NeurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeurView.swift; sourceTree = "<group>"; };
+		323B1B2E2455B2C60001A55B /* AlertButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertButton.swift; sourceTree = "<group>"; };
+		6F6BFF08773CF592C890ADCB /* Pods-Plank.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Plank.release.xcconfig"; path = "Target Support Files/Pods-Plank/Pods-Plank.release.xcconfig"; sourceTree = "<group>"; };
+		8618A0C5C80586C939906402 /* Pods-Plank.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Plank.debug.xcconfig"; path = "Target Support Files/Pods-Plank/Pods-Plank.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71F18A4A627A210499D23A73 /* Pods_Plank.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +51,8 @@
 			children = (
 				323B1B152454BD290001A55B /* Plank */,
 				323B1B142454BD290001A55B /* Products */,
+				F5807ED08CDAD161C88F55FA /* Pods */,
+				43D9ECB7EF4453456DE9169C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +70,31 @@
 				323B1B162454BD290001A55B /* AppDelegate.swift */,
 				323B1B182454BD290001A55B /* SceneDelegate.swift */,
 				323B1B1A2454BD290001A55B /* ViewController.swift */,
+				323B1B2C2455AF510001A55B /* NeurView.swift */,
 				323B1B1C2454BD290001A55B /* Main.storyboard */,
+				323B1B2E2455B2C60001A55B /* AlertButton.swift */,
 				323B1B1F2454BD2F0001A55B /* Assets.xcassets */,
 				323B1B212454BD2F0001A55B /* LaunchScreen.storyboard */,
 				323B1B242454BD2F0001A55B /* Info.plist */,
 			);
 			path = Plank;
+			sourceTree = "<group>";
+		};
+		43D9ECB7EF4453456DE9169C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0AB8307C13F26DC4B8CA4EFD /* Pods_Plank.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F5807ED08CDAD161C88F55FA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8618A0C5C80586C939906402 /* Pods-Plank.debug.xcconfig */,
+				6F6BFF08773CF592C890ADCB /* Pods-Plank.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 323B1B272454BD2F0001A55B /* Build configuration list for PBXNativeTarget "Plank" */;
 			buildPhases = (
+				83FBB854F1DA5DDD8229FC25 /* [CP] Check Pods Manifest.lock */,
 				323B1B0F2454BD290001A55B /* Sources */,
 				323B1B102454BD290001A55B /* Frameworks */,
 				323B1B112454BD290001A55B /* Resources */,
+				4F84D34BB8A85CC617D36869 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,6 +165,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4F84D34BB8A85CC617D36869 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Plank/Pods-Plank-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Plank/Pods-Plank-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Plank/Pods-Plank-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		83FBB854F1DA5DDD8229FC25 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Plank-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		323B1B0F2454BD290001A55B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -141,6 +215,8 @@
 				323B1B1B2454BD290001A55B /* ViewController.swift in Sources */,
 				323B1B172454BD290001A55B /* AppDelegate.swift in Sources */,
 				323B1B192454BD290001A55B /* SceneDelegate.swift in Sources */,
+				323B1B2D2455AF510001A55B /* NeurView.swift in Sources */,
+				323B1B2F2455B2C60001A55B /* AlertButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +358,7 @@
 		};
 		323B1B282454BD2F0001A55B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8618A0C5C80586C939906402 /* Pods-Plank.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -299,6 +376,7 @@
 		};
 		323B1B292454BD2F0001A55B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F6BFF08773CF592C890ADCB /* Pods-Plank.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
