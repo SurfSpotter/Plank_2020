@@ -13,11 +13,11 @@ import EMTNeumorphicView
 
 class NeurView: UIView  {
     private let myView = EMTNeumorphicView()
-    
+    private let cornerRadForAllViews: CGFloat = 25
     override func awakeFromNib() {
         
         myView.neumorphicLayer?.elementBackgroundColor = UIColor.yellow.cgColor
-               myView.neumorphicLayer?.cornerRadius = 30
+               myView.neumorphicLayer?.cornerRadius = cornerRadForAllViews
                // set convex or concave.
                myView.neumorphicLayer?.darkShadowOpacity = 1
         myView.neumorphicLayer?.depthType = .convex
@@ -49,14 +49,14 @@ class NeurView: UIView  {
                textLable.frame = myView.bounds
         
         
-               
+       //self.layer.cornerRadius = cornerRadForAllViews
                self.addSubview(myView)
                self.addSubview(textLable)
     }
     
     override func layoutSubviews() {
         super.layoutSubviews()
-        self.layer.cornerRadius = myView.neumorphicLayer!.cornerRadius
+        self.layer.cornerRadius = cornerRadForAllViews
     }
 
 }
