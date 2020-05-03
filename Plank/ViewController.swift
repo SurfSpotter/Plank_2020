@@ -13,6 +13,7 @@ import EMTNeumorphicView
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var buttonOut: NeurButton!
     
     
     override func viewDidLoad() {
@@ -21,6 +22,10 @@ class ViewController: UIViewController {
       
     }
     
+    @IBAction func buttonAction(_ sender: Any) {
+        buttonOut.button.neumorphicLayer?.depthType = .convex
+        
+    }
 }
 
 

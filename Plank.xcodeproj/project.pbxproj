@@ -15,6 +15,7 @@
 		323B1B232454BD2F0001A55B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 323B1B212454BD2F0001A55B /* LaunchScreen.storyboard */; };
 		323B1B2D2455AF510001A55B /* NeurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323B1B2C2455AF510001A55B /* NeurView.swift */; };
 		323B1B2F2455B2C60001A55B /* AlertButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323B1B2E2455B2C60001A55B /* AlertButton.swift */; };
+		32E6F513245B831F00608A06 /* NeurButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E6F512245B831F00608A06 /* NeurButton.swift */; };
 		71F18A4A627A210499D23A73 /* Pods_Plank.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AB8307C13F26DC4B8CA4EFD /* Pods_Plank.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +31,7 @@
 		323B1B242454BD2F0001A55B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		323B1B2C2455AF510001A55B /* NeurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeurView.swift; sourceTree = "<group>"; };
 		323B1B2E2455B2C60001A55B /* AlertButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertButton.swift; sourceTree = "<group>"; };
+		32E6F512245B831F00608A06 /* NeurButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeurButton.swift; sourceTree = "<group>"; };
 		6F6BFF08773CF592C890ADCB /* Pods-Plank.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Plank.release.xcconfig"; path = "Target Support Files/Pods-Plank/Pods-Plank.release.xcconfig"; sourceTree = "<group>"; };
 		8618A0C5C80586C939906402 /* Pods-Plank.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Plank.debug.xcconfig"; path = "Target Support Files/Pods-Plank/Pods-Plank.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,6 +75,7 @@
 				323B1B2C2455AF510001A55B /* NeurView.swift */,
 				323B1B1C2454BD290001A55B /* Main.storyboard */,
 				323B1B2E2455B2C60001A55B /* AlertButton.swift */,
+				32E6F512245B831F00608A06 /* NeurButton.swift */,
 				323B1B1F2454BD2F0001A55B /* Assets.xcassets */,
 				323B1B212454BD2F0001A55B /* LaunchScreen.storyboard */,
 				323B1B242454BD2F0001A55B /* Info.plist */,
@@ -217,6 +220,7 @@
 				323B1B192454BD290001A55B /* SceneDelegate.swift in Sources */,
 				323B1B2D2455AF510001A55B /* NeurView.swift in Sources */,
 				323B1B2F2455B2C60001A55B /* AlertButton.swift in Sources */,
+				32E6F513245B831F00608A06 /* NeurButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
