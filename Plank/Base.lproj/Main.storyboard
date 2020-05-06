@@ -145,135 +145,425 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lGK-cP-o8V">
-                                <rect key="frame" x="342" y="199" width="52" height="34"/>
-                                <state key="normal" title="Settings">
-                                    <color key="titleColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="-19" translatesAutoresizingMaskIntoConstraints="NO" id="xaG-Wf-m3G">
+                                <rect key="frame" x="10" y="146" width="394" height="469"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="-19" translatesAutoresizingMaskIntoConstraints="NO" id="uC1-wv-qjk">
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="94"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5dt-OC-9aI">
+                                                <rect key="frame" x="0.0" y="0.0" width="94" height="94"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="5dt-OC-9aI" secondAttribute="height" multiplier="1:1" id="z5P-fI-nZ5"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="17"/>
+                                                <state key="normal" title="1" backgroundImage="buttonDayComplete">
+                                                    <color key="titleColor" red="0.42745098039215684" green="0.45882352941176469" blue="0.52941176470588236" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <state key="highlighted" backgroundImage="Rectangle 9"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FwN-Nm-h5x">
+                                                <rect key="frame" x="75" y="0.0" width="94" height="94"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="FwN-Nm-h5x" secondAttribute="height" multiplier="1:1" id="uPU-zU-ZJc"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="17"/>
+                                                <state key="normal" title="2" backgroundImage="buttonDayComplete">
+                                                    <color key="titleColor" red="0.42745098039215684" green="0.45882352941176469" blue="0.52941176470588236" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="but2Act:" destination="82w-Rl-umz" eventType="touchUpInside" id="LHa-Mt-S3g"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v9J-2E-eEa">
+                                                <rect key="frame" x="150" y="0.0" width="94" height="94"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="v9J-2E-eEa" secondAttribute="height" multiplier="1:1" id="gja-IO-lyX"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="17"/>
+                                                <state key="normal" title="3" backgroundImage="buttonDayComplete">
+                                                    <color key="titleColor" red="0.42745098039215684" green="0.45882352941176469" blue="0.52941176470588236" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M7v-Ab-odR">
+                                                <rect key="frame" x="225" y="0.0" width="94" height="94"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="M7v-Ab-odR" secondAttribute="height" multiplier="1:1" id="g4z-G2-0Sv"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="17"/>
+                                                <state key="normal" title="4" backgroundImage="buttonDayComplete">
+                                                    <color key="titleColor" red="0.42745098039215684" green="0.45882352941176469" blue="0.52941176470588236" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jRO-YV-K5o">
+                                                <rect key="frame" x="300" y="0.0" width="94" height="94"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="jRO-YV-K5o" secondAttribute="height" multiplier="1:1" id="ZGy-ZE-hQg"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="17"/>
+                                                <state key="normal" title="5" backgroundImage="buttonDayPass">
+                                                    <color key="titleColor" red="0.42745098039215684" green="0.45882352941176469" blue="0.52941176470588236" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <variation key="heightClass=regular-widthClass=regular" spacing="-40"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="-19" translatesAutoresizingMaskIntoConstraints="NO" id="ezg-DE-hft">
+                                        <rect key="frame" x="0.0" y="75" width="394" height="94"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="78D-m0-czf">
+                                                <rect key="frame" x="0.0" y="0.0" width="94" height="94"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="78D-m0-czf" secondAttribute="height" multiplier="1:1" id="Fc2-uQ-038"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="17"/>
+                                                <state key="normal" title="6" backgroundImage="buttonDayRest">
+                                                    <color key="titleColor" red="0.42745098040000001" green="0.45882352939999999" blue="0.52941176469999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <state key="highlighted" backgroundImage="Rectangle 9"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZIQ-Pe-Zrn">
+                                                <rect key="frame" x="75" y="0.0" width="94" height="94"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="ZIQ-Pe-Zrn" secondAttribute="height" multiplier="1:1" id="Ph8-EP-PZn"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="17"/>
+                                                <state key="normal" title="7" backgroundImage="buttonDayComplete">
+                                                    <color key="titleColor" red="0.42745098040000001" green="0.45882352939999999" blue="0.52941176469999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="but2Act:" destination="82w-Rl-umz" eventType="touchUpInside" id="xFB-VP-bCZ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EVm-CW-9nW">
+                                                <rect key="frame" x="150" y="0.0" width="94" height="94"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="EVm-CW-9nW" secondAttribute="height" multiplier="1:1" id="6nm-dS-RHa"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="17"/>
+                                                <state key="normal" title="8" backgroundImage="buttonDayComplete">
+                                                    <color key="titleColor" red="0.42745098040000001" green="0.45882352939999999" blue="0.52941176469999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JOb-rH-tmg">
+                                                <rect key="frame" x="225" y="0.0" width="94" height="94"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="JOb-rH-tmg" secondAttribute="height" multiplier="1:1" id="1WZ-ui-Fjk"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="17"/>
+                                                <state key="normal" title="9" backgroundImage="buttonDayComplete">
+                                                    <color key="titleColor" red="0.42745098039215684" green="0.45882352941176469" blue="0.52941176470588236" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i9Q-iN-8yt">
+                                                <rect key="frame" x="300" y="0.0" width="94" height="94"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="i9Q-iN-8yt" secondAttribute="height" multiplier="1:1" id="qCk-Ej-VE5"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="17"/>
+                                                <state key="normal" title="10" backgroundImage="buttonDayPass">
+                                                    <color key="titleColor" red="0.42745098039215684" green="0.45882352941176469" blue="0.52941176470588236" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <variation key="heightClass=regular-widthClass=regular" spacing="-40"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="-19" translatesAutoresizingMaskIntoConstraints="NO" id="eBy-zr-zKD">
+                                        <rect key="frame" x="0.0" y="150" width="394" height="94"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lJa-hl-Hf5">
+                                                <rect key="frame" x="0.0" y="0.0" width="94" height="94"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="lJa-hl-Hf5" secondAttribute="height" multiplier="1:1" id="oeW-CF-9Sf"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="17"/>
+                                                <state key="normal" title="11" backgroundImage="buttonDayComplete">
+                                                    <color key="titleColor" red="0.42745098040000001" green="0.45882352939999999" blue="0.52941176469999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <state key="highlighted" backgroundImage="Rectangle 9"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FM4-YX-0Yn">
+                                                <rect key="frame" x="75" y="0.0" width="94" height="94"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="FM4-YX-0Yn" secondAttribute="height" multiplier="1:1" id="2ub-6J-zpe"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="17"/>
+                                                <state key="normal" title="12" backgroundImage="buttonDayComplete">
+                                                    <color key="titleColor" red="0.42745098040000001" green="0.45882352939999999" blue="0.52941176469999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="but2Act:" destination="82w-Rl-umz" eventType="touchUpInside" id="ix5-Pc-3zz"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aek-vD-92S">
+                                                <rect key="frame" x="150" y="0.0" width="94" height="94"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="aek-vD-92S" secondAttribute="height" multiplier="1:1" id="0vb-UL-z5H"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="17"/>
+                                                <state key="normal" title="13" backgroundImage="buttonDayRest">
+                                                    <color key="titleColor" red="0.42745098040000001" green="0.45882352939999999" blue="0.52941176469999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BgT-D5-q9S">
+                                                <rect key="frame" x="225" y="0.0" width="94" height="94"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="BgT-D5-q9S" secondAttribute="height" multiplier="1:1" id="moV-QD-JNY"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="17"/>
+                                                <state key="normal" title="14" backgroundImage="buttonDayComplete">
+                                                    <color key="titleColor" red="0.42745098039215684" green="0.45882352941176469" blue="0.52941176470588236" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hWa-ig-ac1">
+                                                <rect key="frame" x="300" y="0.0" width="94" height="94"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="hWa-ig-ac1" secondAttribute="height" multiplier="1:1" id="LB7-SG-WfI"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="17"/>
+                                                <state key="normal" title="15" backgroundImage="buttonDayComplete">
+                                                    <color key="titleColor" red="0.42745098039215684" green="0.45882352941176469" blue="0.52941176470588236" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <variation key="heightClass=regular-widthClass=regular" spacing="-40"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="-19" translatesAutoresizingMaskIntoConstraints="NO" id="xTQ-Kk-MXb">
+                                        <rect key="frame" x="0.0" y="225" width="394" height="94"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4HY-mb-9rM">
+                                                <rect key="frame" x="0.0" y="0.0" width="94" height="94"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="4HY-mb-9rM" secondAttribute="height" multiplier="1:1" id="dqO-rx-6ld"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="17"/>
+                                                <state key="normal" title="16" backgroundImage="Rectangle 9">
+                                                    <color key="titleColor" red="0.42745098040000001" green="0.45882352939999999" blue="0.52941176469999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <state key="highlighted" backgroundImage="Rectangle 9"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PQE-gz-e44">
+                                                <rect key="frame" x="75" y="0.0" width="94" height="94"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="PQE-gz-e44" secondAttribute="height" multiplier="1:1" id="r8J-PJ-EBR"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="17"/>
+                                                <state key="normal" title="17" backgroundImage="Rectangle 9">
+                                                    <color key="titleColor" red="0.42745098040000001" green="0.45882352939999999" blue="0.52941176469999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="but2Act:" destination="82w-Rl-umz" eventType="touchUpInside" id="C7m-0a-vve"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rFk-AZ-tN4">
+                                                <rect key="frame" x="150" y="0.0" width="94" height="94"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="rFk-AZ-tN4" secondAttribute="height" multiplier="1:1" id="qlo-FD-Qbm"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="17"/>
+                                                <state key="normal" title="18" backgroundImage="Rectangle 9">
+                                                    <color key="titleColor" red="0.42745098040000001" green="0.45882352939999999" blue="0.52941176469999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zD2-HV-gkh">
+                                                <rect key="frame" x="225" y="0.0" width="94" height="94"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="zD2-HV-gkh" secondAttribute="height" multiplier="1:1" id="zeZ-Xi-AyG"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="17"/>
+                                                <state key="normal" title="19" backgroundImage="buttonDayRest">
+                                                    <color key="titleColor" red="0.42745098039215684" green="0.45882352941176469" blue="0.52941176470588236" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zx1-FE-KAV">
+                                                <rect key="frame" x="300" y="0.0" width="94" height="94"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="zx1-FE-KAV" secondAttribute="height" multiplier="1:1" id="btb-6T-bb3"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="17"/>
+                                                <state key="normal" title="20" backgroundImage="Rectangle 9">
+                                                    <color key="titleColor" red="0.42745098039215684" green="0.45882352941176469" blue="0.52941176470588236" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <variation key="heightClass=regular-widthClass=regular" spacing="-40"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="-19" translatesAutoresizingMaskIntoConstraints="NO" id="Lo1-hz-1fC">
+                                        <rect key="frame" x="0.0" y="300" width="394" height="94"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xvW-Rd-h7U">
+                                                <rect key="frame" x="0.0" y="0.0" width="94" height="94"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="xvW-Rd-h7U" secondAttribute="height" multiplier="1:1" id="PS6-lC-Iqz"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="17"/>
+                                                <state key="normal" title="21" backgroundImage="Rectangle 9">
+                                                    <color key="titleColor" red="0.42745098040000001" green="0.45882352939999999" blue="0.52941176469999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <state key="highlighted" backgroundImage="Rectangle 9"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AmG-pO-EqI">
+                                                <rect key="frame" x="75" y="0.0" width="94" height="94"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="AmG-pO-EqI" secondAttribute="height" multiplier="1:1" id="DXT-LN-31J"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="17"/>
+                                                <state key="normal" title="22" backgroundImage="Rectangle 9">
+                                                    <color key="titleColor" red="0.42745098040000001" green="0.45882352939999999" blue="0.52941176469999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="but2Act:" destination="82w-Rl-umz" eventType="touchUpInside" id="EIK-Sc-rJf"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4uW-Mg-Gs3">
+                                                <rect key="frame" x="150" y="0.0" width="94" height="94"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="4uW-Mg-Gs3" secondAttribute="height" multiplier="1:1" id="jpM-6X-4D4"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="17"/>
+                                                <state key="normal" title="23" backgroundImage="Rectangle 9">
+                                                    <color key="titleColor" red="0.42745098040000001" green="0.45882352939999999" blue="0.52941176469999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OEI-Ml-Jvm">
+                                                <rect key="frame" x="225" y="0.0" width="94" height="94"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="OEI-Ml-Jvm" secondAttribute="height" multiplier="1:1" id="mmW-mi-dDW"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="17"/>
+                                                <state key="normal" title="24" backgroundImage="Rectangle 9">
+                                                    <color key="titleColor" red="0.42745098039215684" green="0.45882352941176469" blue="0.52941176470588236" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uq0-uV-mqq">
+                                                <rect key="frame" x="300" y="0.0" width="94" height="94"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="uq0-uV-mqq" secondAttribute="height" multiplier="1:1" id="rKa-sF-Ba1"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="17"/>
+                                                <state key="normal" title="25" backgroundImage="Rectangle 9">
+                                                    <color key="titleColor" red="0.42745098039215684" green="0.45882352941176469" blue="0.52941176470588236" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <variation key="heightClass=regular-widthClass=regular" spacing="-40"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="-19" translatesAutoresizingMaskIntoConstraints="NO" id="3F3-Y9-vbu">
+                                        <rect key="frame" x="0.0" y="375" width="394" height="94"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="03v-D5-Fcs">
+                                                <rect key="frame" x="0.0" y="0.0" width="94" height="94"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="03v-D5-Fcs" secondAttribute="height" multiplier="1:1" id="YnL-w8-7dm"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="17"/>
+                                                <state key="normal" title="26" backgroundImage="buttonDayRest">
+                                                    <color key="titleColor" red="0.42745098040000001" green="0.45882352939999999" blue="0.52941176469999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <state key="highlighted" backgroundImage="Rectangle 9"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iK0-H4-WOh">
+                                                <rect key="frame" x="75" y="0.0" width="94" height="94"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="iK0-H4-WOh" secondAttribute="height" multiplier="1:1" id="eFd-p7-unR"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="17"/>
+                                                <state key="normal" title="27" backgroundImage="Rectangle 9">
+                                                    <color key="titleColor" red="0.42745098040000001" green="0.45882352939999999" blue="0.52941176469999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="but2Act:" destination="82w-Rl-umz" eventType="touchUpInside" id="u1k-be-iXS"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gvf-eJ-EgW">
+                                                <rect key="frame" x="150" y="0.0" width="94" height="94"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="gvf-eJ-EgW" secondAttribute="height" multiplier="1:1" id="P4h-bm-lla"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="17"/>
+                                                <state key="normal" title="28" backgroundImage="Rectangle 9">
+                                                    <color key="titleColor" red="0.42745098040000001" green="0.45882352939999999" blue="0.52941176469999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OIH-1b-gdP">
+                                                <rect key="frame" x="225" y="0.0" width="94" height="94"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="OIH-1b-gdP" secondAttribute="height" multiplier="1:1" id="GTs-Mr-NdZ"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="17"/>
+                                                <state key="normal" title="29" backgroundImage="Rectangle 9">
+                                                    <color key="titleColor" red="0.42745098040000001" green="0.45882352939999999" blue="0.52941176469999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0k0-P5-wUk">
+                                                <rect key="frame" x="300" y="0.0" width="94" height="94"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="0k0-P5-wUk" secondAttribute="height" multiplier="1:1" id="gWf-xL-MOb"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="17"/>
+                                                <state key="normal" title="30" backgroundImage="Rectangle 9">
+                                                    <color key="titleColor" red="0.42745098040000001" green="0.45882352939999999" blue="0.52941176469999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <variation key="heightClass=regular-widthClass=regular" spacing="-40"/>
+                                    </stackView>
+                                </subviews>
+                                <variation key="heightClass=regular-widthClass=regular" spacing="-50"/>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let start your first  of 30 plank training day!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d8m-fB-YVT">
+                                <rect key="frame" x="79" y="58" width="256" height="38"/>
+                                <fontDescription key="fontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="19"/>
+                                <color key="textColor" red="0.42745098039215684" green="0.45882352941176469" blue="0.52941176470588236" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="30"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lGK-cP-o8V">
+                                <rect key="frame" x="345" y="54" width="57" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="lGK-cP-o8V" secondAttribute="height" multiplier="1:1" id="deR-Tf-MX3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="tintColor" red="0.42745098039215684" green="0.45882352941176469" blue="0.52941176470588236" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" image="gear" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="light"/>
                                 </state>
                                 <connections>
                                     <segue destination="AEj-YR-KE1" kind="presentation" id="7IS-1k-gWO"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bGE-0h-N1n">
-                                <rect key="frame" x="20" y="78" width="67" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Info"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bGE-0h-N1n">
+                                <rect key="frame" x="18" y="55" width="51" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="bGE-0h-N1n" secondAttribute="height" multiplier="1:1" id="OjB-19-0Vl"/>
+                                </constraints>
+                                <color key="tintColor" red="0.42745098039215684" green="0.45882352941176469" blue="0.52941176470588236" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" image="info.circle" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="light"/>
+                                </state>
                                 <connections>
                                     <segue destination="Tyd-1l-qh4" kind="presentation" id="4gh-fa-XWg"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillEqually" alignment="top" spacing="-19" translatesAutoresizingMaskIntoConstraints="NO" id="uC1-wv-qjk">
-                                <rect key="frame" x="10" y="263" width="394" height="94"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5dt-OC-9aI">
-                                        <rect key="frame" x="0.0" y="0.0" width="94" height="94"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="5dt-OC-9aI" secondAttribute="height" multiplier="1:1" id="z5P-fI-nZ5"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                        <state key="normal" title="1" backgroundImage="buttonDayComplete">
-                                            <color key="titleColor" red="0.42745098039215684" green="0.45882352941176469" blue="0.52941176470588236" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        </state>
-                                        <state key="highlighted" backgroundImage="Rectangle 9"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FwN-Nm-h5x">
-                                        <rect key="frame" x="75" y="0.0" width="94" height="94"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="FwN-Nm-h5x" secondAttribute="height" multiplier="1:1" id="uPU-zU-ZJc"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                        <state key="normal" title="2" backgroundImage="buttonDayComplete">
-                                            <color key="titleColor" red="0.42745098039215684" green="0.45882352941176469" blue="0.52941176470588236" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="but2Act:" destination="82w-Rl-umz" eventType="touchUpInside" id="LHa-Mt-S3g"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v9J-2E-eEa">
-                                        <rect key="frame" x="150" y="0.0" width="94" height="94"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="v9J-2E-eEa" secondAttribute="height" multiplier="1:1" id="gja-IO-lyX"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                        <state key="normal" title="3" backgroundImage="buttonDayComplete">
-                                            <color key="titleColor" red="0.42745098039215684" green="0.45882352941176469" blue="0.52941176470588236" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M7v-Ab-odR">
-                                        <rect key="frame" x="225" y="0.0" width="94" height="94"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="M7v-Ab-odR" secondAttribute="height" multiplier="1:1" id="g4z-G2-0Sv"/>
-                                        </constraints>
-                                        <state key="normal" title="1" backgroundImage="buttonDayComplete"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jRO-YV-K5o">
-                                        <rect key="frame" x="300" y="0.0" width="94" height="94"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="jRO-YV-K5o" secondAttribute="height" multiplier="1:1" id="ZGy-ZE-hQg"/>
-                                        </constraints>
-                                        <state key="normal" title="1" backgroundImage="buttonDayPass"/>
-                                    </button>
-                                </subviews>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillEqually" alignment="top" spacing="-19" translatesAutoresizingMaskIntoConstraints="NO" id="57h-k9-tFH">
-                                <rect key="frame" x="10" y="338" width="394" height="94"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="seR-Zy-cmc">
-                                        <rect key="frame" x="0.0" y="0.0" width="94" height="94"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="seR-Zy-cmc" secondAttribute="height" multiplier="1:1" id="1ud-oJ-qGc"/>
-                                        </constraints>
-                                        <state key="normal" title="1" backgroundImage="buttonDayRest">
-                                            <color key="titleColor" red="0.42745098040000001" green="0.45882352939999999" blue="0.52941176469999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IBH-8F-Oat">
-                                        <rect key="frame" x="75" y="0.0" width="94" height="94"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="IBH-8F-Oat" secondAttribute="height" multiplier="1:1" id="wk3-Kq-jSl"/>
-                                        </constraints>
-                                        <state key="normal" title="1" backgroundImage="Rectangle 9"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1zc-9W-gHv">
-                                        <rect key="frame" x="150" y="0.0" width="94" height="94"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="1zc-9W-gHv" secondAttribute="height" multiplier="1:1" id="hAS-7S-mF0"/>
-                                        </constraints>
-                                        <state key="normal" title="1" backgroundImage="Rectangle 9"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YvS-yc-A03">
-                                        <rect key="frame" x="225" y="0.0" width="94" height="94"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="YvS-yc-A03" secondAttribute="height" multiplier="1:1" id="aYk-QJ-1gw"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                        <state key="normal" title="1" backgroundImage="Rectangle 9"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2UD-Vs-cbj">
-                                        <rect key="frame" x="300" y="0.0" width="94" height="94"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="2UD-Vs-cbj" secondAttribute="height" multiplier="1:1" id="4bg-GU-VvF"/>
-                                        </constraints>
-                                        <state key="normal" title="1" backgroundImage="Rectangle 9"/>
-                                    </button>
-                                </subviews>
-                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.92156862745098034" green="0.92549019607843142" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="57h-k9-tFH" secondAttribute="trailing" constant="10" id="1aV-sJ-R9E">
-                                <variation key="heightClass=regular-widthClass=regular" constant="100"/>
+                            <constraint firstItem="d8m-fB-YVT" firstAttribute="top" secondItem="bGE-0h-N1n" secondAttribute="top" constant="3" id="4oy-nX-LRd"/>
+                            <constraint firstItem="lGK-cP-o8V" firstAttribute="top" secondItem="u6p-Fi-Txm" secondAttribute="top" constant="10" id="LKe-pd-6v1"/>
+                            <constraint firstItem="lGK-cP-o8V" firstAttribute="trailing" secondItem="xaG-Wf-m3G" secondAttribute="trailing" constant="-2" id="MS0-fD-lEp"/>
+                            <constraint firstItem="xaG-Wf-m3G" firstAttribute="top" secondItem="lGK-cP-o8V" secondAttribute="bottom" constant="35" id="PIL-2v-FiJ"/>
+                            <constraint firstItem="xaG-Wf-m3G" firstAttribute="leading" secondItem="u6p-Fi-Txm" secondAttribute="leading" constant="10" id="TP2-sd-Gza">
+                                <variation key="heightClass=regular-widthClass=regular" constant="50"/>
                             </constraint>
-                            <constraint firstAttribute="trailing" secondItem="uC1-wv-qjk" secondAttribute="trailing" constant="10" id="7hM-DY-JeQ">
-                                <variation key="heightClass=regular-widthClass=regular" constant="100"/>
-                            </constraint>
-                            <constraint firstItem="57h-k9-tFH" firstAttribute="leading" secondItem="u6p-Fi-Txm" secondAttribute="leading" constant="10" id="IO3-Vm-HVH">
-                                <variation key="heightClass=regular-widthClass=regular" constant="100"/>
-                            </constraint>
-                            <constraint firstItem="uC1-wv-qjk" firstAttribute="top" secondItem="lGK-cP-o8V" secondAttribute="bottom" constant="30" id="aqY-cV-kqg"/>
-                            <constraint firstItem="57h-k9-tFH" firstAttribute="top" secondItem="uC1-wv-qjk" secondAttribute="bottom" constant="-19" id="gz8-qX-bf6"/>
-                            <constraint firstItem="uC1-wv-qjk" firstAttribute="leading" secondItem="u6p-Fi-Txm" secondAttribute="leading" constant="10" id="x4b-Bt-zOq">
-                                <variation key="heightClass=regular-widthClass=regular" constant="100"/>
+                            <constraint firstItem="xaG-Wf-m3G" firstAttribute="leading" secondItem="bGE-0h-N1n" secondAttribute="leading" constant="-8" id="YdL-Yl-Q5v"/>
+                            <constraint firstItem="d8m-fB-YVT" firstAttribute="centerX" secondItem="Jwa-Td-PA1" secondAttribute="centerX" id="cTk-Ee-GZR"/>
+                            <constraint firstItem="d8m-fB-YVT" firstAttribute="leading" secondItem="bGE-0h-N1n" secondAttribute="trailing" constant="10" id="nNR-9k-iaV"/>
+                            <constraint firstItem="lGK-cP-o8V" firstAttribute="leading" secondItem="d8m-fB-YVT" secondAttribute="trailing" constant="10" id="pPg-uh-u0p"/>
+                            <constraint firstItem="bGE-0h-N1n" firstAttribute="top" secondItem="u6p-Fi-Txm" secondAttribute="top" constant="11" id="w7u-Ed-b6e"/>
+                            <constraint firstAttribute="trailing" secondItem="xaG-Wf-m3G" secondAttribute="trailing" constant="10" id="xct-mU-9Ke">
+                                <variation key="heightClass=regular-widthClass=regular" constant="50"/>
                             </constraint>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="u6p-Fi-Txm"/>
@@ -403,5 +693,7 @@
         <image name="buttonDayComplete" width="154" height="154"/>
         <image name="buttonDayPass" width="154" height="154"/>
         <image name="buttonDayRest" width="154" height="154"/>
+        <image name="gear" catalog="system" width="128" height="119"/>
+        <image name="info.circle" catalog="system" width="128" height="121"/>
     </resources>
 </document>
