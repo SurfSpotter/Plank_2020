@@ -151,7 +151,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="-19" translatesAutoresizingMaskIntoConstraints="NO" id="uC1-wv-qjk">
                                         <rect key="frame" x="0.0" y="0.0" width="394" height="94"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5dt-OC-9aI">
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5dt-OC-9aI">
                                                 <rect key="frame" x="0.0" y="0.0" width="94" height="94"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="5dt-OC-9aI" secondAttribute="height" multiplier="1:1" id="z5P-fI-nZ5"/>
@@ -161,8 +161,11 @@
                                                     <color key="titleColor" red="0.42745098039215684" green="0.45882352941176469" blue="0.52941176470588236" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <state key="highlighted" backgroundImage="Rectangle 9"/>
+                                                <connections>
+                                                    <action selector="daysButtonsActionWithSender:" destination="82w-Rl-umz" eventType="touchUpInside" id="xVG-P9-Tg8"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FwN-Nm-h5x">
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FwN-Nm-h5x">
                                                 <rect key="frame" x="75" y="0.0" width="94" height="94"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="FwN-Nm-h5x" secondAttribute="height" multiplier="1:1" id="uPU-zU-ZJc"/>
@@ -171,8 +174,11 @@
                                                 <state key="normal" title="2" backgroundImage="buttonDayComplete">
                                                     <color key="titleColor" red="0.42745098039215684" green="0.45882352941176469" blue="0.52941176470588236" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="daysButtonsActionWithSender:" destination="82w-Rl-umz" eventType="touchUpInside" id="4iY-Zi-Myb"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v9J-2E-eEa">
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v9J-2E-eEa">
                                                 <rect key="frame" x="150" y="0.0" width="94" height="94"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="v9J-2E-eEa" secondAttribute="height" multiplier="1:1" id="gja-IO-lyX"/>
@@ -181,8 +187,11 @@
                                                 <state key="normal" title="3" backgroundImage="buttonDayComplete">
                                                     <color key="titleColor" red="0.42745098039215684" green="0.45882352941176469" blue="0.52941176470588236" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="daysButtonsActionWithSender:" destination="82w-Rl-umz" eventType="touchUpInside" id="2Va-hm-fMe"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M7v-Ab-odR">
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M7v-Ab-odR">
                                                 <rect key="frame" x="225" y="0.0" width="94" height="94"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="M7v-Ab-odR" secondAttribute="height" multiplier="1:1" id="g4z-G2-0Sv"/>
@@ -191,8 +200,11 @@
                                                 <state key="normal" title="4" backgroundImage="buttonDayComplete">
                                                     <color key="titleColor" red="0.42745098039215684" green="0.45882352941176469" blue="0.52941176470588236" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="daysButtonsActionWithSender:" destination="82w-Rl-umz" eventType="touchUpInside" id="CSb-Zs-AKx"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jRO-YV-K5o">
+                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jRO-YV-K5o">
                                                 <rect key="frame" x="300" y="0.0" width="94" height="94"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="jRO-YV-K5o" secondAttribute="height" multiplier="1:1" id="ZGy-ZE-hQg"/>
@@ -201,6 +213,9 @@
                                                 <state key="normal" title="5" backgroundImage="buttonDayPass">
                                                     <color key="titleColor" red="0.42745098039215684" green="0.45882352941176469" blue="0.52941176470588236" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="daysButtonsActionWithSender:" destination="82w-Rl-umz" eventType="touchUpInside" id="ivb-IZ-glt"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <variation key="heightClass=regular-widthClass=regular" spacing="-40"/>
@@ -208,7 +223,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="-19" translatesAutoresizingMaskIntoConstraints="NO" id="ezg-DE-hft">
                                         <rect key="frame" x="0.0" y="75" width="394" height="94"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="78D-m0-czf">
+                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="78D-m0-czf">
                                                 <rect key="frame" x="0.0" y="0.0" width="94" height="94"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="78D-m0-czf" secondAttribute="height" multiplier="1:1" id="Fc2-uQ-038"/>
@@ -218,8 +233,11 @@
                                                     <color key="titleColor" red="0.42745098040000001" green="0.45882352939999999" blue="0.52941176469999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <state key="highlighted" backgroundImage="Rectangle 9"/>
+                                                <connections>
+                                                    <action selector="daysButtonsActionWithSender:" destination="82w-Rl-umz" eventType="touchUpInside" id="Osa-Kh-GT7"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZIQ-Pe-Zrn">
+                                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZIQ-Pe-Zrn">
                                                 <rect key="frame" x="75" y="0.0" width="94" height="94"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="ZIQ-Pe-Zrn" secondAttribute="height" multiplier="1:1" id="Ph8-EP-PZn"/>
@@ -229,10 +247,10 @@
                                                     <color key="titleColor" red="0.42745098040000001" green="0.45882352939999999" blue="0.52941176469999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="but2Act:" destination="82w-Rl-umz" eventType="touchUpInside" id="xFB-VP-bCZ"/>
+                                                    <action selector="daysButtonsActionWithSender:" destination="82w-Rl-umz" eventType="touchUpInside" id="bTq-S2-FuH"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EVm-CW-9nW">
+                                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EVm-CW-9nW">
                                                 <rect key="frame" x="150" y="0.0" width="94" height="94"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="EVm-CW-9nW" secondAttribute="height" multiplier="1:1" id="6nm-dS-RHa"/>
@@ -241,8 +259,11 @@
                                                 <state key="normal" title="8" backgroundImage="buttonDayComplete">
                                                     <color key="titleColor" red="0.42745098040000001" green="0.45882352939999999" blue="0.52941176469999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="daysButtonsActionWithSender:" destination="82w-Rl-umz" eventType="touchUpInside" id="1MG-XV-pg5"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JOb-rH-tmg">
+                                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JOb-rH-tmg">
                                                 <rect key="frame" x="225" y="0.0" width="94" height="94"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="JOb-rH-tmg" secondAttribute="height" multiplier="1:1" id="1WZ-ui-Fjk"/>
@@ -251,8 +272,11 @@
                                                 <state key="normal" title="9" backgroundImage="buttonDayComplete">
                                                     <color key="titleColor" red="0.42745098039215684" green="0.45882352941176469" blue="0.52941176470588236" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="daysButtonsActionWithSender:" destination="82w-Rl-umz" eventType="touchUpInside" id="2Hn-17-LEb"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i9Q-iN-8yt">
+                                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i9Q-iN-8yt">
                                                 <rect key="frame" x="300" y="0.0" width="94" height="94"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="i9Q-iN-8yt" secondAttribute="height" multiplier="1:1" id="qCk-Ej-VE5"/>
@@ -261,6 +285,9 @@
                                                 <state key="normal" title="10" backgroundImage="buttonDayPass">
                                                     <color key="titleColor" red="0.42745098039215684" green="0.45882352941176469" blue="0.52941176470588236" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="daysButtonsActionWithSender:" destination="82w-Rl-umz" eventType="touchUpInside" id="HGV-cE-oJQ"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <variation key="heightClass=regular-widthClass=regular" spacing="-40"/>
@@ -268,7 +295,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="-19" translatesAutoresizingMaskIntoConstraints="NO" id="eBy-zr-zKD">
                                         <rect key="frame" x="0.0" y="150" width="394" height="94"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lJa-hl-Hf5">
+                                            <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lJa-hl-Hf5">
                                                 <rect key="frame" x="0.0" y="0.0" width="94" height="94"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="lJa-hl-Hf5" secondAttribute="height" multiplier="1:1" id="oeW-CF-9Sf"/>
@@ -278,8 +305,11 @@
                                                     <color key="titleColor" red="0.42745098040000001" green="0.45882352939999999" blue="0.52941176469999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <state key="highlighted" backgroundImage="Rectangle 9"/>
+                                                <connections>
+                                                    <action selector="daysButtonsActionWithSender:" destination="82w-Rl-umz" eventType="touchUpInside" id="cI0-ab-gKu"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FM4-YX-0Yn">
+                                            <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FM4-YX-0Yn">
                                                 <rect key="frame" x="75" y="0.0" width="94" height="94"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="FM4-YX-0Yn" secondAttribute="height" multiplier="1:1" id="2ub-6J-zpe"/>
@@ -289,10 +319,10 @@
                                                     <color key="titleColor" red="0.42745098040000001" green="0.45882352939999999" blue="0.52941176469999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="but2Act:" destination="82w-Rl-umz" eventType="touchUpInside" id="ix5-Pc-3zz"/>
+                                                    <action selector="daysButtonsActionWithSender:" destination="82w-Rl-umz" eventType="touchUpInside" id="Ttc-g1-3pK"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aek-vD-92S">
+                                            <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aek-vD-92S">
                                                 <rect key="frame" x="150" y="0.0" width="94" height="94"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="aek-vD-92S" secondAttribute="height" multiplier="1:1" id="0vb-UL-z5H"/>
@@ -301,8 +331,11 @@
                                                 <state key="normal" title="13" backgroundImage="buttonDayRest">
                                                     <color key="titleColor" red="0.42745098040000001" green="0.45882352939999999" blue="0.52941176469999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="daysButtonsActionWithSender:" destination="82w-Rl-umz" eventType="touchUpInside" id="sb1-SB-lrg"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BgT-D5-q9S">
+                                            <button opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BgT-D5-q9S">
                                                 <rect key="frame" x="225" y="0.0" width="94" height="94"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="BgT-D5-q9S" secondAttribute="height" multiplier="1:1" id="moV-QD-JNY"/>
@@ -311,8 +344,11 @@
                                                 <state key="normal" title="14" backgroundImage="buttonDayComplete">
                                                     <color key="titleColor" red="0.42745098039215684" green="0.45882352941176469" blue="0.52941176470588236" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="daysButtonsActionWithSender:" destination="82w-Rl-umz" eventType="touchUpInside" id="hjg-Jl-1gJ"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hWa-ig-ac1">
+                                            <button opaque="NO" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hWa-ig-ac1">
                                                 <rect key="frame" x="300" y="0.0" width="94" height="94"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="hWa-ig-ac1" secondAttribute="height" multiplier="1:1" id="LB7-SG-WfI"/>
@@ -321,6 +357,9 @@
                                                 <state key="normal" title="15" backgroundImage="buttonDayComplete">
                                                     <color key="titleColor" red="0.42745098039215684" green="0.45882352941176469" blue="0.52941176470588236" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="daysButtonsActionWithSender:" destination="82w-Rl-umz" eventType="touchUpInside" id="nXC-y9-MY9"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <variation key="heightClass=regular-widthClass=regular" spacing="-40"/>
@@ -328,7 +367,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="-19" translatesAutoresizingMaskIntoConstraints="NO" id="xTQ-Kk-MXb">
                                         <rect key="frame" x="0.0" y="225" width="394" height="94"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4HY-mb-9rM">
+                                            <button opaque="NO" tag="16" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4HY-mb-9rM">
                                                 <rect key="frame" x="0.0" y="0.0" width="94" height="94"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="4HY-mb-9rM" secondAttribute="height" multiplier="1:1" id="dqO-rx-6ld"/>
@@ -338,8 +377,11 @@
                                                     <color key="titleColor" red="0.42745098040000001" green="0.45882352939999999" blue="0.52941176469999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <state key="highlighted" backgroundImage="Rectangle 9"/>
+                                                <connections>
+                                                    <action selector="daysButtonsActionWithSender:" destination="82w-Rl-umz" eventType="touchUpInside" id="TXY-0O-c53"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PQE-gz-e44">
+                                            <button opaque="NO" tag="17" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PQE-gz-e44">
                                                 <rect key="frame" x="75" y="0.0" width="94" height="94"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="PQE-gz-e44" secondAttribute="height" multiplier="1:1" id="r8J-PJ-EBR"/>
@@ -349,10 +391,10 @@
                                                     <color key="titleColor" red="0.42745098040000001" green="0.45882352939999999" blue="0.52941176469999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="but2Act:" destination="82w-Rl-umz" eventType="touchUpInside" id="C7m-0a-vve"/>
+                                                    <action selector="daysButtonsActionWithSender:" destination="82w-Rl-umz" eventType="touchUpInside" id="lqp-fz-O1f"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rFk-AZ-tN4">
+                                            <button opaque="NO" tag="18" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rFk-AZ-tN4">
                                                 <rect key="frame" x="150" y="0.0" width="94" height="94"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="rFk-AZ-tN4" secondAttribute="height" multiplier="1:1" id="qlo-FD-Qbm"/>
@@ -361,8 +403,11 @@
                                                 <state key="normal" title="18" backgroundImage="Rectangle 9">
                                                     <color key="titleColor" red="0.42745098040000001" green="0.45882352939999999" blue="0.52941176469999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="daysButtonsActionWithSender:" destination="82w-Rl-umz" eventType="touchUpInside" id="XJt-q5-UNI"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zD2-HV-gkh">
+                                            <button opaque="NO" tag="19" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zD2-HV-gkh">
                                                 <rect key="frame" x="225" y="0.0" width="94" height="94"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="zD2-HV-gkh" secondAttribute="height" multiplier="1:1" id="zeZ-Xi-AyG"/>
@@ -371,8 +416,11 @@
                                                 <state key="normal" title="19" backgroundImage="buttonDayRest">
                                                     <color key="titleColor" red="0.42745098039215684" green="0.45882352941176469" blue="0.52941176470588236" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="daysButtonsActionWithSender:" destination="82w-Rl-umz" eventType="touchUpInside" id="ez5-zX-tAE"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zx1-FE-KAV">
+                                            <button opaque="NO" tag="20" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zx1-FE-KAV">
                                                 <rect key="frame" x="300" y="0.0" width="94" height="94"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="zx1-FE-KAV" secondAttribute="height" multiplier="1:1" id="btb-6T-bb3"/>
@@ -381,6 +429,9 @@
                                                 <state key="normal" title="20" backgroundImage="Rectangle 9">
                                                     <color key="titleColor" red="0.42745098039215684" green="0.45882352941176469" blue="0.52941176470588236" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="daysButtonsActionWithSender:" destination="82w-Rl-umz" eventType="touchUpInside" id="8Gx-Jt-Ira"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <variation key="heightClass=regular-widthClass=regular" spacing="-40"/>
@@ -388,7 +439,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="-19" translatesAutoresizingMaskIntoConstraints="NO" id="Lo1-hz-1fC">
                                         <rect key="frame" x="0.0" y="300" width="394" height="94"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xvW-Rd-h7U">
+                                            <button opaque="NO" tag="21" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xvW-Rd-h7U">
                                                 <rect key="frame" x="0.0" y="0.0" width="94" height="94"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="xvW-Rd-h7U" secondAttribute="height" multiplier="1:1" id="PS6-lC-Iqz"/>
@@ -398,8 +449,11 @@
                                                     <color key="titleColor" red="0.42745098040000001" green="0.45882352939999999" blue="0.52941176469999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <state key="highlighted" backgroundImage="Rectangle 9"/>
+                                                <connections>
+                                                    <action selector="daysButtonsActionWithSender:" destination="82w-Rl-umz" eventType="touchUpInside" id="8Vd-3C-OdV"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AmG-pO-EqI">
+                                            <button opaque="NO" tag="22" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AmG-pO-EqI">
                                                 <rect key="frame" x="75" y="0.0" width="94" height="94"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="AmG-pO-EqI" secondAttribute="height" multiplier="1:1" id="DXT-LN-31J"/>
@@ -409,10 +463,10 @@
                                                     <color key="titleColor" red="0.42745098040000001" green="0.45882352939999999" blue="0.52941176469999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="but2Act:" destination="82w-Rl-umz" eventType="touchUpInside" id="EIK-Sc-rJf"/>
+                                                    <action selector="daysButtonsActionWithSender:" destination="82w-Rl-umz" eventType="touchUpInside" id="dpV-Qn-jkz"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4uW-Mg-Gs3">
+                                            <button opaque="NO" tag="23" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4uW-Mg-Gs3">
                                                 <rect key="frame" x="150" y="0.0" width="94" height="94"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="4uW-Mg-Gs3" secondAttribute="height" multiplier="1:1" id="jpM-6X-4D4"/>
@@ -421,8 +475,11 @@
                                                 <state key="normal" title="23" backgroundImage="Rectangle 9">
                                                     <color key="titleColor" red="0.42745098040000001" green="0.45882352939999999" blue="0.52941176469999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="daysButtonsActionWithSender:" destination="82w-Rl-umz" eventType="touchUpInside" id="ern-EO-D8g"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OEI-Ml-Jvm">
+                                            <button opaque="NO" tag="24" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OEI-Ml-Jvm">
                                                 <rect key="frame" x="225" y="0.0" width="94" height="94"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="OEI-Ml-Jvm" secondAttribute="height" multiplier="1:1" id="mmW-mi-dDW"/>
@@ -431,8 +488,11 @@
                                                 <state key="normal" title="24" backgroundImage="Rectangle 9">
                                                     <color key="titleColor" red="0.42745098039215684" green="0.45882352941176469" blue="0.52941176470588236" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="daysButtonsActionWithSender:" destination="82w-Rl-umz" eventType="touchUpInside" id="rKH-Bq-onf"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uq0-uV-mqq">
+                                            <button opaque="NO" tag="25" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uq0-uV-mqq">
                                                 <rect key="frame" x="300" y="0.0" width="94" height="94"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="uq0-uV-mqq" secondAttribute="height" multiplier="1:1" id="rKa-sF-Ba1"/>
@@ -441,6 +501,9 @@
                                                 <state key="normal" title="25" backgroundImage="Rectangle 9">
                                                     <color key="titleColor" red="0.42745098039215684" green="0.45882352941176469" blue="0.52941176470588236" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="daysButtonsActionWithSender:" destination="82w-Rl-umz" eventType="touchUpInside" id="EiN-xF-cOm"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <variation key="heightClass=regular-widthClass=regular" spacing="-40"/>
@@ -448,7 +511,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="-19" translatesAutoresizingMaskIntoConstraints="NO" id="3F3-Y9-vbu">
                                         <rect key="frame" x="0.0" y="375" width="394" height="94"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="03v-D5-Fcs">
+                                            <button opaque="NO" tag="26" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="03v-D5-Fcs">
                                                 <rect key="frame" x="0.0" y="0.0" width="94" height="94"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="03v-D5-Fcs" secondAttribute="height" multiplier="1:1" id="YnL-w8-7dm"/>
@@ -458,8 +521,11 @@
                                                     <color key="titleColor" red="0.42745098040000001" green="0.45882352939999999" blue="0.52941176469999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <state key="highlighted" backgroundImage="Rectangle 9"/>
+                                                <connections>
+                                                    <action selector="daysButtonsActionWithSender:" destination="82w-Rl-umz" eventType="touchUpInside" id="RLv-KB-ggs"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iK0-H4-WOh">
+                                            <button opaque="NO" tag="27" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iK0-H4-WOh">
                                                 <rect key="frame" x="75" y="0.0" width="94" height="94"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="iK0-H4-WOh" secondAttribute="height" multiplier="1:1" id="eFd-p7-unR"/>
@@ -469,10 +535,10 @@
                                                     <color key="titleColor" red="0.42745098040000001" green="0.45882352939999999" blue="0.52941176469999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="but2Act:" destination="82w-Rl-umz" eventType="touchUpInside" id="u1k-be-iXS"/>
+                                                    <action selector="daysButtonsActionWithSender:" destination="82w-Rl-umz" eventType="touchUpInside" id="llM-PE-2I7"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gvf-eJ-EgW">
+                                            <button opaque="NO" tag="28" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gvf-eJ-EgW">
                                                 <rect key="frame" x="150" y="0.0" width="94" height="94"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="gvf-eJ-EgW" secondAttribute="height" multiplier="1:1" id="P4h-bm-lla"/>
@@ -481,8 +547,11 @@
                                                 <state key="normal" title="28" backgroundImage="Rectangle 9">
                                                     <color key="titleColor" red="0.42745098040000001" green="0.45882352939999999" blue="0.52941176469999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="daysButtonsActionWithSender:" destination="82w-Rl-umz" eventType="touchUpInside" id="dAc-gt-8Ls"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OIH-1b-gdP">
+                                            <button opaque="NO" tag="29" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OIH-1b-gdP">
                                                 <rect key="frame" x="225" y="0.0" width="94" height="94"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="OIH-1b-gdP" secondAttribute="height" multiplier="1:1" id="GTs-Mr-NdZ"/>
@@ -491,8 +560,11 @@
                                                 <state key="normal" title="29" backgroundImage="Rectangle 9">
                                                     <color key="titleColor" red="0.42745098040000001" green="0.45882352939999999" blue="0.52941176469999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="daysButtonsActionWithSender:" destination="82w-Rl-umz" eventType="touchUpInside" id="mYW-ZT-dAJ"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0k0-P5-wUk">
+                                            <button opaque="NO" tag="30" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0k0-P5-wUk">
                                                 <rect key="frame" x="300" y="0.0" width="94" height="94"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="0k0-P5-wUk" secondAttribute="height" multiplier="1:1" id="gWf-xL-MOb"/>
@@ -501,6 +573,9 @@
                                                 <state key="normal" title="30" backgroundImage="Rectangle 9">
                                                     <color key="titleColor" red="0.42745098040000001" green="0.45882352939999999" blue="0.52941176469999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="daysButtonsActionWithSender:" destination="82w-Rl-umz" eventType="touchUpInside" id="scr-kX-4vq"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <variation key="heightClass=regular-widthClass=regular" spacing="-40"/>

@@ -46,15 +46,15 @@ class CalendarController: UIViewController {
     @IBOutlet weak var butOut30: UIButton!
     
     
-   
     
     
     
-        
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-       // but1Out.pulsate()
+        // but1Out.pulsate()
         
         
         
@@ -62,10 +62,22 @@ class CalendarController: UIViewController {
     }
     
     
-    @IBAction func but2Act(_ sender: Any) {
-    //    animateSuperScale(button: but1Out)
         
+    @IBAction func daysButtonsAction(sender: AnyObject) {
+        guard let button = sender as? UIButton else {
+            return
+        }
+
+        switch button.tag {
+        case 1...30: print("button \(button.tag) pushed")
+            // Do something
+        default:
+            print("Unknown button")
+            return
+        }
     }
+    
+    
     
     
     // MARK : Animate Functions
