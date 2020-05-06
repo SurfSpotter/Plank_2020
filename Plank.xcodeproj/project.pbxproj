@@ -15,6 +15,7 @@
 		323B1B232454BD2F0001A55B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 323B1B212454BD2F0001A55B /* LaunchScreen.storyboard */; };
 		323B1B2D2455AF510001A55B /* NeurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323B1B2C2455AF510001A55B /* NeurView.swift */; };
 		323B1B2F2455B2C60001A55B /* AlertButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323B1B2E2455B2C60001A55B /* AlertButton.swift */; };
+		3270DCAC24629038000A8A26 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3270DCAB24629038000A8A26 /* Extensions.swift */; };
 		32C6ED2D246286B3005DCD08 /* Montserrat-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 32C6ED2B246286B3005DCD08 /* Montserrat-Regular.otf */; };
 		32C6ED2E246286B3005DCD08 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 32C6ED2C246286B3005DCD08 /* Montserrat-Regular.ttf */; };
 		32D3D5AA245EEC6A003AD54C /* CalendarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D3D5A9245EEC6A003AD54C /* CalendarController.swift */; };
@@ -35,6 +36,7 @@
 		323B1B242454BD2F0001A55B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		323B1B2C2455AF510001A55B /* NeurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeurView.swift; sourceTree = "<group>"; };
 		323B1B2E2455B2C60001A55B /* AlertButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertButton.swift; sourceTree = "<group>"; };
+		3270DCAB24629038000A8A26 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		32C6ED2B246286B3005DCD08 /* Montserrat-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.otf"; sourceTree = "<group>"; };
 		32C6ED2C246286B3005DCD08 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
 		32D3D5A9245EEC6A003AD54C /* CalendarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarController.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				323B1B152454BD290001A55B /* Plank */,
+				3270DCA924628BF6000A8A26 /* Fonts */,
 				323B1B142454BD290001A55B /* Products */,
 				F5807ED08CDAD161C88F55FA /* Pods */,
 				43D9ECB7EF4453456DE9169C /* Frameworks */,
@@ -78,21 +81,38 @@
 			isa = PBXGroup;
 			children = (
 				323B1B1C2454BD290001A55B /* Main.storyboard */,
+				32D3D5A9245EEC6A003AD54C /* CalendarController.swift */,
+				3270DCAA24628C1C000A8A26 /* Controllers */,
+				323B1B1F2454BD2F0001A55B /* Assets.xcassets */,
+				3270DCAB24629038000A8A26 /* Extensions.swift */,
 				323B1B162454BD290001A55B /* AppDelegate.swift */,
 				323B1B182454BD290001A55B /* SceneDelegate.swift */,
-				32D3D5A9245EEC6A003AD54C /* CalendarController.swift */,
+				323B1B212454BD2F0001A55B /* LaunchScreen.storyboard */,
+				323B1B242454BD2F0001A55B /* Info.plist */,
+			);
+			path = Plank;
+			sourceTree = "<group>";
+		};
+		3270DCA924628BF6000A8A26 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				32C6ED2B246286B3005DCD08 /* Montserrat-Regular.otf */,
+				32C6ED2C246286B3005DCD08 /* Montserrat-Regular.ttf */,
+			);
+			name = Fonts;
+			path = Plank;
+			sourceTree = "<group>";
+		};
+		3270DCAA24628C1C000A8A26 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
 				323B1B1A2454BD290001A55B /* ViewController.swift */,
 				323B1B2C2455AF510001A55B /* NeurView.swift */,
 				32D3D5AB245EF535003AD54C /* NeurViewBut.swift */,
 				323B1B2E2455B2C60001A55B /* AlertButton.swift */,
 				32E6F512245B831F00608A06 /* NeurButton.swift */,
-				323B1B1F2454BD2F0001A55B /* Assets.xcassets */,
-				32C6ED2B246286B3005DCD08 /* Montserrat-Regular.otf */,
-				32C6ED2C246286B3005DCD08 /* Montserrat-Regular.ttf */,
-				323B1B212454BD2F0001A55B /* LaunchScreen.storyboard */,
-				323B1B242454BD2F0001A55B /* Info.plist */,
 			);
-			path = Plank;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		43D9ECB7EF4453456DE9169C /* Frameworks */ = {
@@ -230,6 +250,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				323B1B1B2454BD290001A55B /* ViewController.swift in Sources */,
+				3270DCAC24629038000A8A26 /* Extensions.swift in Sources */,
 				32D3D5AA245EEC6A003AD54C /* CalendarController.swift in Sources */,
 				323B1B172454BD290001A55B /* AppDelegate.swift in Sources */,
 				323B1B192454BD290001A55B /* SceneDelegate.swift in Sources */,
@@ -382,6 +403,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 84ZHP38C6Z;
 				INFOPLIST_FILE = Plank/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -400,6 +422,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 84ZHP38C6Z;
 				INFOPLIST_FILE = Plank/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

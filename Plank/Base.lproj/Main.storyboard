@@ -140,7 +140,7 @@
         <!--MainController-->
         <scene sceneID="5VL-7j-GAr">
             <objects>
-                <viewController title="MainController" id="82w-Rl-umz" customClass="MainController" customModule="Plank" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="MainController" id="82w-Rl-umz" customClass="CalendarController" customModule="Plank" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Jwa-Td-PA1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -185,6 +185,9 @@
                                         <state key="normal" title="2" backgroundImage="buttonDayComplete">
                                             <color key="titleColor" red="0.42745098039215684" green="0.45882352941176469" blue="0.52941176470588236" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
+                                        <connections>
+                                            <action selector="but2Act:" destination="82w-Rl-umz" eventType="touchUpInside" id="LHa-Mt-S3g"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v9J-2E-eEa">
                                         <rect key="frame" x="150" y="0.0" width="94" height="94"/>
@@ -243,6 +246,7 @@
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="YvS-yc-A03" secondAttribute="height" multiplier="1:1" id="aYk-QJ-1gw"/>
                                         </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                         <state key="normal" title="1" backgroundImage="Rectangle 9"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2UD-Vs-cbj">
@@ -274,6 +278,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="u6p-Fi-Txm"/>
                     </view>
+                    <connections>
+                        <outlet property="but1Out" destination="5dt-OC-9aI" id="DRA-7f-2UK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wuj-Os-mjf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
