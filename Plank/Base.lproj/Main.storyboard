@@ -174,13 +174,14 @@
                                         <state key="normal" title="1" backgroundImage="buttonDayComplete">
                                             <color key="titleColor" red="0.42745098039215684" green="0.45882352941176469" blue="0.52941176470588236" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
-                                        <state key="highlighted" title="H" backgroundImage="Rectangle 9"/>
+                                        <state key="highlighted" backgroundImage="Rectangle 9"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FwN-Nm-h5x">
                                         <rect key="frame" x="75" y="0.0" width="94" height="94"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="FwN-Nm-h5x" secondAttribute="height" multiplier="1:1" id="uPU-zU-ZJc"/>
                                         </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                         <state key="normal" title="2" backgroundImage="buttonDayComplete">
                                             <color key="titleColor" red="0.42745098039215684" green="0.45882352941176469" blue="0.52941176470588236" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>

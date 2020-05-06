@@ -15,7 +15,8 @@
 		323B1B232454BD2F0001A55B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 323B1B212454BD2F0001A55B /* LaunchScreen.storyboard */; };
 		323B1B2D2455AF510001A55B /* NeurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323B1B2C2455AF510001A55B /* NeurView.swift */; };
 		323B1B2F2455B2C60001A55B /* AlertButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323B1B2E2455B2C60001A55B /* AlertButton.swift */; };
-		32710915246037DD00C0FAD5 /* selectedButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 32710914246037DD00C0FAD5 /* selectedButton.png */; };
+		32C6ED2D246286B3005DCD08 /* Montserrat-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 32C6ED2B246286B3005DCD08 /* Montserrat-Regular.otf */; };
+		32C6ED2E246286B3005DCD08 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 32C6ED2C246286B3005DCD08 /* Montserrat-Regular.ttf */; };
 		32D3D5AA245EEC6A003AD54C /* CalendarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D3D5A9245EEC6A003AD54C /* CalendarController.swift */; };
 		32D3D5AC245EF535003AD54C /* NeurViewBut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D3D5AB245EF535003AD54C /* NeurViewBut.swift */; };
 		32E6F513245B831F00608A06 /* NeurButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E6F512245B831F00608A06 /* NeurButton.swift */; };
@@ -34,7 +35,8 @@
 		323B1B242454BD2F0001A55B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		323B1B2C2455AF510001A55B /* NeurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeurView.swift; sourceTree = "<group>"; };
 		323B1B2E2455B2C60001A55B /* AlertButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertButton.swift; sourceTree = "<group>"; };
-		32710914246037DD00C0FAD5 /* selectedButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = selectedButton.png; sourceTree = "<group>"; };
+		32C6ED2B246286B3005DCD08 /* Montserrat-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.otf"; sourceTree = "<group>"; };
+		32C6ED2C246286B3005DCD08 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
 		32D3D5A9245EEC6A003AD54C /* CalendarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarController.swift; sourceTree = "<group>"; };
 		32D3D5AB245EF535003AD54C /* NeurViewBut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeurViewBut.swift; sourceTree = "<group>"; };
 		32E6F512245B831F00608A06 /* NeurButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeurButton.swift; sourceTree = "<group>"; };
@@ -75,17 +77,18 @@
 		323B1B152454BD290001A55B /* Plank */ = {
 			isa = PBXGroup;
 			children = (
+				323B1B1C2454BD290001A55B /* Main.storyboard */,
 				323B1B162454BD290001A55B /* AppDelegate.swift */,
 				323B1B182454BD290001A55B /* SceneDelegate.swift */,
 				32D3D5A9245EEC6A003AD54C /* CalendarController.swift */,
 				323B1B1A2454BD290001A55B /* ViewController.swift */,
 				323B1B2C2455AF510001A55B /* NeurView.swift */,
 				32D3D5AB245EF535003AD54C /* NeurViewBut.swift */,
-				323B1B1C2454BD290001A55B /* Main.storyboard */,
 				323B1B2E2455B2C60001A55B /* AlertButton.swift */,
 				32E6F512245B831F00608A06 /* NeurButton.swift */,
 				323B1B1F2454BD2F0001A55B /* Assets.xcassets */,
-				32710914246037DD00C0FAD5 /* selectedButton.png */,
+				32C6ED2B246286B3005DCD08 /* Montserrat-Regular.otf */,
+				32C6ED2C246286B3005DCD08 /* Montserrat-Regular.ttf */,
 				323B1B212454BD2F0001A55B /* LaunchScreen.storyboard */,
 				323B1B242454BD2F0001A55B /* Info.plist */,
 			);
@@ -169,9 +172,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32C6ED2E246286B3005DCD08 /* Montserrat-Regular.ttf in Resources */,
 				323B1B232454BD2F0001A55B /* LaunchScreen.storyboard in Resources */,
 				323B1B202454BD2F0001A55B /* Assets.xcassets in Resources */,
-				32710915246037DD00C0FAD5 /* selectedButton.png in Resources */,
+				32C6ED2D246286B3005DCD08 /* Montserrat-Regular.otf in Resources */,
 				323B1B1E2454BD290001A55B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -308,7 +312,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -362,7 +366,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
