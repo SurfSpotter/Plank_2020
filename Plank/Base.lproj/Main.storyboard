@@ -162,7 +162,7 @@
                                                 </state>
                                                 <state key="highlighted" backgroundImage="Rectangle 9"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FwN-Nm-h5x">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FwN-Nm-h5x">
                                                 <rect key="frame" x="75" y="0.0" width="94" height="94"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="FwN-Nm-h5x" secondAttribute="height" multiplier="1:1" id="uPU-zU-ZJc"/>
@@ -171,11 +171,8 @@
                                                 <state key="normal" title="2" backgroundImage="buttonDayComplete">
                                                     <color key="titleColor" red="0.42745098039215684" green="0.45882352941176469" blue="0.52941176470588236" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
-                                                <connections>
-                                                    <action selector="but2Act:" destination="82w-Rl-umz" eventType="touchUpInside" id="LHa-Mt-S3g"/>
-                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v9J-2E-eEa">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v9J-2E-eEa">
                                                 <rect key="frame" x="150" y="0.0" width="94" height="94"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="v9J-2E-eEa" secondAttribute="height" multiplier="1:1" id="gja-IO-lyX"/>
@@ -185,7 +182,7 @@
                                                     <color key="titleColor" red="0.42745098039215684" green="0.45882352941176469" blue="0.52941176470588236" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M7v-Ab-odR">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M7v-Ab-odR">
                                                 <rect key="frame" x="225" y="0.0" width="94" height="94"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="M7v-Ab-odR" secondAttribute="height" multiplier="1:1" id="g4z-G2-0Sv"/>
@@ -195,7 +192,7 @@
                                                     <color key="titleColor" red="0.42745098039215684" green="0.45882352941176469" blue="0.52941176470588236" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jRO-YV-K5o">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jRO-YV-K5o">
                                                 <rect key="frame" x="300" y="0.0" width="94" height="94"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="jRO-YV-K5o" secondAttribute="height" multiplier="1:1" id="ZGy-ZE-hQg"/>
@@ -211,7 +208,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="-19" translatesAutoresizingMaskIntoConstraints="NO" id="ezg-DE-hft">
                                         <rect key="frame" x="0.0" y="75" width="394" height="94"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="78D-m0-czf">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="78D-m0-czf">
                                                 <rect key="frame" x="0.0" y="0.0" width="94" height="94"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="78D-m0-czf" secondAttribute="height" multiplier="1:1" id="Fc2-uQ-038"/>
@@ -222,7 +219,7 @@
                                                 </state>
                                                 <state key="highlighted" backgroundImage="Rectangle 9"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZIQ-Pe-Zrn">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZIQ-Pe-Zrn">
                                                 <rect key="frame" x="75" y="0.0" width="94" height="94"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="ZIQ-Pe-Zrn" secondAttribute="height" multiplier="1:1" id="Ph8-EP-PZn"/>
@@ -235,7 +232,7 @@
                                                     <action selector="but2Act:" destination="82w-Rl-umz" eventType="touchUpInside" id="xFB-VP-bCZ"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EVm-CW-9nW">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EVm-CW-9nW">
                                                 <rect key="frame" x="150" y="0.0" width="94" height="94"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="EVm-CW-9nW" secondAttribute="height" multiplier="1:1" id="6nm-dS-RHa"/>
@@ -245,7 +242,7 @@
                                                     <color key="titleColor" red="0.42745098040000001" green="0.45882352939999999" blue="0.52941176469999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JOb-rH-tmg">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JOb-rH-tmg">
                                                 <rect key="frame" x="225" y="0.0" width="94" height="94"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="JOb-rH-tmg" secondAttribute="height" multiplier="1:1" id="1WZ-ui-Fjk"/>
@@ -255,7 +252,7 @@
                                                     <color key="titleColor" red="0.42745098039215684" green="0.45882352941176469" blue="0.52941176470588236" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i9Q-iN-8yt">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i9Q-iN-8yt">
                                                 <rect key="frame" x="300" y="0.0" width="94" height="94"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="i9Q-iN-8yt" secondAttribute="height" multiplier="1:1" id="qCk-Ej-VE5"/>
@@ -282,7 +279,7 @@
                                                 </state>
                                                 <state key="highlighted" backgroundImage="Rectangle 9"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FM4-YX-0Yn">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FM4-YX-0Yn">
                                                 <rect key="frame" x="75" y="0.0" width="94" height="94"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="FM4-YX-0Yn" secondAttribute="height" multiplier="1:1" id="2ub-6J-zpe"/>
@@ -295,7 +292,7 @@
                                                     <action selector="but2Act:" destination="82w-Rl-umz" eventType="touchUpInside" id="ix5-Pc-3zz"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aek-vD-92S">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aek-vD-92S">
                                                 <rect key="frame" x="150" y="0.0" width="94" height="94"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="aek-vD-92S" secondAttribute="height" multiplier="1:1" id="0vb-UL-z5H"/>
@@ -305,7 +302,7 @@
                                                     <color key="titleColor" red="0.42745098040000001" green="0.45882352939999999" blue="0.52941176469999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BgT-D5-q9S">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BgT-D5-q9S">
                                                 <rect key="frame" x="225" y="0.0" width="94" height="94"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="BgT-D5-q9S" secondAttribute="height" multiplier="1:1" id="moV-QD-JNY"/>
@@ -315,7 +312,7 @@
                                                     <color key="titleColor" red="0.42745098039215684" green="0.45882352941176469" blue="0.52941176470588236" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hWa-ig-ac1">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hWa-ig-ac1">
                                                 <rect key="frame" x="300" y="0.0" width="94" height="94"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="hWa-ig-ac1" secondAttribute="height" multiplier="1:1" id="LB7-SG-WfI"/>
@@ -342,7 +339,7 @@
                                                 </state>
                                                 <state key="highlighted" backgroundImage="Rectangle 9"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PQE-gz-e44">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PQE-gz-e44">
                                                 <rect key="frame" x="75" y="0.0" width="94" height="94"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="PQE-gz-e44" secondAttribute="height" multiplier="1:1" id="r8J-PJ-EBR"/>
@@ -355,7 +352,7 @@
                                                     <action selector="but2Act:" destination="82w-Rl-umz" eventType="touchUpInside" id="C7m-0a-vve"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rFk-AZ-tN4">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rFk-AZ-tN4">
                                                 <rect key="frame" x="150" y="0.0" width="94" height="94"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="rFk-AZ-tN4" secondAttribute="height" multiplier="1:1" id="qlo-FD-Qbm"/>
@@ -365,7 +362,7 @@
                                                     <color key="titleColor" red="0.42745098040000001" green="0.45882352939999999" blue="0.52941176469999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zD2-HV-gkh">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zD2-HV-gkh">
                                                 <rect key="frame" x="225" y="0.0" width="94" height="94"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="zD2-HV-gkh" secondAttribute="height" multiplier="1:1" id="zeZ-Xi-AyG"/>
@@ -375,7 +372,7 @@
                                                     <color key="titleColor" red="0.42745098039215684" green="0.45882352941176469" blue="0.52941176470588236" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zx1-FE-KAV">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zx1-FE-KAV">
                                                 <rect key="frame" x="300" y="0.0" width="94" height="94"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="zx1-FE-KAV" secondAttribute="height" multiplier="1:1" id="btb-6T-bb3"/>
@@ -391,7 +388,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="-19" translatesAutoresizingMaskIntoConstraints="NO" id="Lo1-hz-1fC">
                                         <rect key="frame" x="0.0" y="300" width="394" height="94"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xvW-Rd-h7U">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xvW-Rd-h7U">
                                                 <rect key="frame" x="0.0" y="0.0" width="94" height="94"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="xvW-Rd-h7U" secondAttribute="height" multiplier="1:1" id="PS6-lC-Iqz"/>
@@ -402,7 +399,7 @@
                                                 </state>
                                                 <state key="highlighted" backgroundImage="Rectangle 9"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AmG-pO-EqI">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AmG-pO-EqI">
                                                 <rect key="frame" x="75" y="0.0" width="94" height="94"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="AmG-pO-EqI" secondAttribute="height" multiplier="1:1" id="DXT-LN-31J"/>
@@ -415,7 +412,7 @@
                                                     <action selector="but2Act:" destination="82w-Rl-umz" eventType="touchUpInside" id="EIK-Sc-rJf"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4uW-Mg-Gs3">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4uW-Mg-Gs3">
                                                 <rect key="frame" x="150" y="0.0" width="94" height="94"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="4uW-Mg-Gs3" secondAttribute="height" multiplier="1:1" id="jpM-6X-4D4"/>
@@ -425,7 +422,7 @@
                                                     <color key="titleColor" red="0.42745098040000001" green="0.45882352939999999" blue="0.52941176469999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OEI-Ml-Jvm">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OEI-Ml-Jvm">
                                                 <rect key="frame" x="225" y="0.0" width="94" height="94"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="OEI-Ml-Jvm" secondAttribute="height" multiplier="1:1" id="mmW-mi-dDW"/>
@@ -435,7 +432,7 @@
                                                     <color key="titleColor" red="0.42745098039215684" green="0.45882352941176469" blue="0.52941176470588236" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uq0-uV-mqq">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uq0-uV-mqq">
                                                 <rect key="frame" x="300" y="0.0" width="94" height="94"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="uq0-uV-mqq" secondAttribute="height" multiplier="1:1" id="rKa-sF-Ba1"/>
@@ -451,7 +448,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="-19" translatesAutoresizingMaskIntoConstraints="NO" id="3F3-Y9-vbu">
                                         <rect key="frame" x="0.0" y="375" width="394" height="94"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="03v-D5-Fcs">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="03v-D5-Fcs">
                                                 <rect key="frame" x="0.0" y="0.0" width="94" height="94"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="03v-D5-Fcs" secondAttribute="height" multiplier="1:1" id="YnL-w8-7dm"/>
@@ -462,7 +459,7 @@
                                                 </state>
                                                 <state key="highlighted" backgroundImage="Rectangle 9"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iK0-H4-WOh">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iK0-H4-WOh">
                                                 <rect key="frame" x="75" y="0.0" width="94" height="94"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="iK0-H4-WOh" secondAttribute="height" multiplier="1:1" id="eFd-p7-unR"/>
@@ -475,7 +472,7 @@
                                                     <action selector="but2Act:" destination="82w-Rl-umz" eventType="touchUpInside" id="u1k-be-iXS"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gvf-eJ-EgW">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gvf-eJ-EgW">
                                                 <rect key="frame" x="150" y="0.0" width="94" height="94"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="gvf-eJ-EgW" secondAttribute="height" multiplier="1:1" id="P4h-bm-lla"/>
@@ -485,7 +482,7 @@
                                                     <color key="titleColor" red="0.42745098040000001" green="0.45882352939999999" blue="0.52941176469999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OIH-1b-gdP">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OIH-1b-gdP">
                                                 <rect key="frame" x="225" y="0.0" width="94" height="94"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="OIH-1b-gdP" secondAttribute="height" multiplier="1:1" id="GTs-Mr-NdZ"/>
@@ -495,7 +492,7 @@
                                                     <color key="titleColor" red="0.42745098040000001" green="0.45882352939999999" blue="0.52941176469999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0k0-P5-wUk">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0k0-P5-wUk">
                                                 <rect key="frame" x="300" y="0.0" width="94" height="94"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="0k0-P5-wUk" secondAttribute="height" multiplier="1:1" id="gWf-xL-MOb"/>
@@ -512,7 +509,7 @@
                                 <variation key="heightClass=regular-widthClass=regular" spacing="-50"/>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let start your first  of 30 plank training day!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d8m-fB-YVT">
-                                <rect key="frame" x="79" y="58" width="256" height="38"/>
+                                <rect key="frame" x="79" y="70" width="256" height="38"/>
                                 <fontDescription key="fontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="19"/>
                                 <color key="textColor" red="0.42745098039215684" green="0.45882352941176469" blue="0.52941176470588236" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -550,7 +547,9 @@
                         </subviews>
                         <color key="backgroundColor" red="0.92156862745098034" green="0.92549019607843142" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="d8m-fB-YVT" firstAttribute="top" secondItem="bGE-0h-N1n" secondAttribute="top" constant="3" id="4oy-nX-LRd"/>
+                            <constraint firstItem="d8m-fB-YVT" firstAttribute="top" secondItem="bGE-0h-N1n" secondAttribute="top" constant="15" id="4oy-nX-LRd">
+                                <variation key="heightClass=regular-widthClass=regular" constant="65"/>
+                            </constraint>
                             <constraint firstItem="lGK-cP-o8V" firstAttribute="top" secondItem="u6p-Fi-Txm" secondAttribute="top" constant="10" id="LKe-pd-6v1"/>
                             <constraint firstItem="lGK-cP-o8V" firstAttribute="trailing" secondItem="xaG-Wf-m3G" secondAttribute="trailing" constant="-2" id="MS0-fD-lEp"/>
                             <constraint firstItem="xaG-Wf-m3G" firstAttribute="top" secondItem="lGK-cP-o8V" secondAttribute="bottom" constant="35" id="PIL-2v-FiJ"/>
@@ -569,7 +568,36 @@
                         <viewLayoutGuide key="safeArea" id="u6p-Fi-Txm"/>
                     </view>
                     <connections>
-                        <outlet property="but1Out" destination="5dt-OC-9aI" id="DRA-7f-2UK"/>
+                        <outlet property="butOut1" destination="5dt-OC-9aI" id="tQD-Ij-SEq"/>
+                        <outlet property="butOut10" destination="i9Q-iN-8yt" id="QPo-qH-Yez"/>
+                        <outlet property="butOut11" destination="lJa-hl-Hf5" id="vdo-WI-9qh"/>
+                        <outlet property="butOut12" destination="FM4-YX-0Yn" id="6wf-de-CXH"/>
+                        <outlet property="butOut13" destination="aek-vD-92S" id="GFF-XQ-5mP"/>
+                        <outlet property="butOut14" destination="BgT-D5-q9S" id="CFX-We-1tK"/>
+                        <outlet property="butOut15" destination="hWa-ig-ac1" id="uSH-x3-ysd"/>
+                        <outlet property="butOut16" destination="4HY-mb-9rM" id="oVf-Hd-fKc"/>
+                        <outlet property="butOut17" destination="PQE-gz-e44" id="CP0-A8-ygU"/>
+                        <outlet property="butOut18" destination="rFk-AZ-tN4" id="vXc-aH-Fka"/>
+                        <outlet property="butOut19" destination="zD2-HV-gkh" id="EjS-ks-16j"/>
+                        <outlet property="butOut2" destination="FwN-Nm-h5x" id="ANd-3a-w4F"/>
+                        <outlet property="butOut20" destination="zx1-FE-KAV" id="yN4-Gn-Kqn"/>
+                        <outlet property="butOut21" destination="xvW-Rd-h7U" id="Fgw-VA-XSu"/>
+                        <outlet property="butOut22" destination="AmG-pO-EqI" id="vEF-CO-InD"/>
+                        <outlet property="butOut23" destination="4uW-Mg-Gs3" id="KBA-zy-1O9"/>
+                        <outlet property="butOut24" destination="OEI-Ml-Jvm" id="KKN-NX-xJW"/>
+                        <outlet property="butOut25" destination="uq0-uV-mqq" id="NJc-rX-9P9"/>
+                        <outlet property="butOut26" destination="03v-D5-Fcs" id="Rea-e6-1tp"/>
+                        <outlet property="butOut27" destination="iK0-H4-WOh" id="KAn-yS-UaE"/>
+                        <outlet property="butOut28" destination="gvf-eJ-EgW" id="Iit-Yq-ftl"/>
+                        <outlet property="butOut29" destination="OIH-1b-gdP" id="UAT-Sc-r8H"/>
+                        <outlet property="butOut3" destination="v9J-2E-eEa" id="mch-0V-fHr"/>
+                        <outlet property="butOut30" destination="0k0-P5-wUk" id="LLu-fd-5Ji"/>
+                        <outlet property="butOut4" destination="M7v-Ab-odR" id="Gse-uU-tee"/>
+                        <outlet property="butOut5" destination="jRO-YV-K5o" id="hx2-8A-YDt"/>
+                        <outlet property="butOut6" destination="78D-m0-czf" id="c07-AG-4tx"/>
+                        <outlet property="butOut7" destination="ZIQ-Pe-Zrn" id="S0R-hP-zL6"/>
+                        <outlet property="butOut8" destination="EVm-CW-9nW" id="ryb-th-wHj"/>
+                        <outlet property="butOut9" destination="JOb-rH-tmg" id="SxT-2o-J1f"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wuj-Os-mjf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
