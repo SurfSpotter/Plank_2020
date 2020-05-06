@@ -13,23 +13,25 @@ import EMTNeumorphicView
 
 class NeurButton: UIButton {
     
-   
+    
     let button1 = EMTNeumorphicButton(type: .custom)
-    
-    
     var button = EMTNeumorphicButton()
     var cornRadForAll: CGFloat = 23
+    
+    
+    
+    
     override func awakeFromNib() {
         
         
-           button1.setImage(UIImage(named: "heart-outline"), for: .normal)
-           button1.setImage(UIImage(named: "heart-solid"), for: .selected)
-           button1.contentVerticalAlignment = .fill
-           button1.contentHorizontalAlignment = .fill
-           
+        button1.setImage(UIImage(named: "heart-outline"), for: .normal)
+        button1.setImage(UIImage(named: "heart-solid"), for: .selected)
+        button1.contentVerticalAlignment = .fill
+        button1.contentHorizontalAlignment = .fill
+        
         button1.addTarget(self, action: #selector(tapped) , for: .touchUpInside)
         button1.neumorphicLayer?.depthType = .convex
-        button1.neumorphicLayer?.elementBackgroundColor = self.backgroundColor?.cgColor as! CGColor
+        //button1.neumorphicLayer?.elementBackgroundColor = self.backgroundColor?.cgColor as! CGColor
         button1.layer.cornerRadius = cornRadForAll
         button1.neumorphicLayer?.elementDepth = 5
         // Default is 1.
@@ -39,32 +41,25 @@ class NeurButton: UIButton {
         button1.frame = self.bounds
         self.addSubview(button1)
         
-          
         
         
         
         
-//        button.frame = self.bounds
-//        button.setTitle("buttonW!", for: .application)
-//        self.addSubview(button)
+        
+      
     }
     
     
     @objc func tapped(_ button: EMTNeumorphicButton) {
-                  // isSelected property changes neumorphicLayer?.depthType automatically
-                  button.isSelected = !button.isSelected
-              }
+        // isSelected property changes neumorphicLayer?.depthType automatically
+        button.isSelected = !button.isSelected
+    }
     override func layoutSubviews() {
         super.layoutSubviews()
         
         button1.imageEdgeInsets = UIEdgeInsets(top: 26, left: 24, bottom: 22, right: 24)
         
-        
-//        button.neumorphicLayer?.edged = true
-//        button.neumorphicLayer?.darkShadowOpacity = 1
-//        button.neumorphicLayer?.depthType = .convex
-//        button.layer.cornerRadius = cornRadForAll
+  
         self.backgroundColor = .clear
-        //fself.layer.cornerRadius = cornRadForAll
     }
 }
