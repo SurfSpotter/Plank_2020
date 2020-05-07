@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="82w-Rl-umz">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Idj-3Z-DRk">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -92,7 +92,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-362" y="106"/>
+            <point key="canvasLocation" x="-555" y="106"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ONA-UH-Rrn">
@@ -373,7 +373,7 @@
                                                     <constraint firstAttribute="width" secondItem="4HY-mb-9rM" secondAttribute="height" multiplier="1:1" id="dqO-rx-6ld"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="17"/>
-                                                <state key="normal" title="16" backgroundImage="Rectangle 9">
+                                                <state key="normal" title="16" backgroundImage="blankCircle">
                                                     <color key="titleColor" red="0.42745098040000001" green="0.45882352939999999" blue="0.52941176469999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <state key="highlighted" backgroundImage="Rectangle 9"/>
@@ -387,7 +387,7 @@
                                                     <constraint firstAttribute="width" secondItem="PQE-gz-e44" secondAttribute="height" multiplier="1:1" id="r8J-PJ-EBR"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="17"/>
-                                                <state key="normal" title="17" backgroundImage="Rectangle 9">
+                                                <state key="normal" title="17" backgroundImage="blankCircle">
                                                     <color key="titleColor" red="0.42745098040000001" green="0.45882352939999999" blue="0.52941176469999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <connections>
@@ -400,7 +400,7 @@
                                                     <constraint firstAttribute="width" secondItem="rFk-AZ-tN4" secondAttribute="height" multiplier="1:1" id="qlo-FD-Qbm"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="17"/>
-                                                <state key="normal" title="18" backgroundImage="Rectangle 9">
+                                                <state key="normal" title="18" backgroundImage="blankCircle">
                                                     <color key="titleColor" red="0.42745098040000001" green="0.45882352939999999" blue="0.52941176469999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <connections>
@@ -426,7 +426,7 @@
                                                     <constraint firstAttribute="width" secondItem="zx1-FE-KAV" secondAttribute="height" multiplier="1:1" id="btb-6T-bb3"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="17"/>
-                                                <state key="normal" title="20" backgroundImage="Rectangle 9">
+                                                <state key="normal" title="20" backgroundImage="blankCircle">
                                                     <color key="titleColor" red="0.42745098039215684" green="0.45882352941176469" blue="0.52941176470588236" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <connections>
@@ -445,7 +445,7 @@
                                                     <constraint firstAttribute="width" secondItem="xvW-Rd-h7U" secondAttribute="height" multiplier="1:1" id="PS6-lC-Iqz"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="17"/>
-                                                <state key="normal" title="21" backgroundImage="Rectangle 9">
+                                                <state key="normal" title="21" backgroundImage="blankCircle">
                                                     <color key="titleColor" red="0.42745098040000001" green="0.45882352939999999" blue="0.52941176469999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <state key="highlighted" backgroundImage="Rectangle 9"/>
@@ -459,7 +459,7 @@
                                                     <constraint firstAttribute="width" secondItem="AmG-pO-EqI" secondAttribute="height" multiplier="1:1" id="DXT-LN-31J"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="17"/>
-                                                <state key="normal" title="22" backgroundImage="Rectangle 9">
+                                                <state key="normal" title="22" backgroundImage="blankCircle">
                                                     <color key="titleColor" red="0.42745098040000001" green="0.45882352939999999" blue="0.52941176469999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <connections>
@@ -472,7 +472,7 @@
                                                     <constraint firstAttribute="width" secondItem="4uW-Mg-Gs3" secondAttribute="height" multiplier="1:1" id="jpM-6X-4D4"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="17"/>
-                                                <state key="normal" title="23" backgroundImage="Rectangle 9">
+                                                <state key="normal" title="23" backgroundImage="blankCircle">
                                                     <color key="titleColor" red="0.42745098040000001" green="0.45882352939999999" blue="0.52941176469999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <connections>
@@ -485,7 +485,7 @@
                                                     <constraint firstAttribute="width" secondItem="OEI-Ml-Jvm" secondAttribute="height" multiplier="1:1" id="mmW-mi-dDW"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="17"/>
-                                                <state key="normal" title="24" backgroundImage="Rectangle 9">
+                                                <state key="normal" title="24" backgroundImage="blankCircle">
                                                     <color key="titleColor" red="0.42745098039215684" green="0.45882352941176469" blue="0.52941176470588236" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <connections>
@@ -498,7 +498,7 @@
                                                     <constraint firstAttribute="width" secondItem="uq0-uV-mqq" secondAttribute="height" multiplier="1:1" id="rKa-sF-Ba1"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="17"/>
-                                                <state key="normal" title="25" backgroundImage="Rectangle 9">
+                                                <state key="normal" title="25" backgroundImage="blankCircle">
                                                     <color key="titleColor" red="0.42745098039215684" green="0.45882352941176469" blue="0.52941176470588236" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <connections>
@@ -531,7 +531,7 @@
                                                     <constraint firstAttribute="width" secondItem="iK0-H4-WOh" secondAttribute="height" multiplier="1:1" id="eFd-p7-unR"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="17"/>
-                                                <state key="normal" title="27" backgroundImage="Rectangle 9">
+                                                <state key="normal" title="27" backgroundImage="blankCircle">
                                                     <color key="titleColor" red="0.42745098040000001" green="0.45882352939999999" blue="0.52941176469999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <connections>
@@ -544,7 +544,7 @@
                                                     <constraint firstAttribute="width" secondItem="gvf-eJ-EgW" secondAttribute="height" multiplier="1:1" id="P4h-bm-lla"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="17"/>
-                                                <state key="normal" title="28" backgroundImage="Rectangle 9">
+                                                <state key="normal" title="28" backgroundImage="blankCircle">
                                                     <color key="titleColor" red="0.42745098040000001" green="0.45882352939999999" blue="0.52941176469999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <connections>
@@ -557,7 +557,7 @@
                                                     <constraint firstAttribute="width" secondItem="OIH-1b-gdP" secondAttribute="height" multiplier="1:1" id="GTs-Mr-NdZ"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="17"/>
-                                                <state key="normal" title="29" backgroundImage="Rectangle 9">
+                                                <state key="normal" title="29" backgroundImage="blankCircle">
                                                     <color key="titleColor" red="0.42745098040000001" green="0.45882352939999999" blue="0.52941176469999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <connections>
@@ -570,7 +570,7 @@
                                                     <constraint firstAttribute="width" secondItem="0k0-P5-wUk" secondAttribute="height" multiplier="1:1" id="gWf-xL-MOb"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="17"/>
-                                                <state key="normal" title="30" backgroundImage="Rectangle 9">
+                                                <state key="normal" title="30" backgroundImage="blankCircle">
                                                     <color key="titleColor" red="0.42745098040000001" green="0.45882352939999999" blue="0.52941176469999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <connections>
@@ -679,29 +679,27 @@
             </objects>
             <point key="canvasLocation" x="650.72463768115949" y="105.80357142857143"/>
         </scene>
-        <!--Timer-->
+        <!--TimerController-->
         <scene sceneID="G01-KB-ggg">
             <objects>
-                <viewController title="Timer" id="Idj-3Z-DRk" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TimerController" title="TimerController" id="Idj-3Z-DRk" customClass="TimerController" customModule="Plank" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Tm2-Zm-OcM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TimerVc" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nig-2H-hGN">
-                                <rect key="frame" x="49" y="189" width="302" height="162"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BZB-Q0-umo">
+                                <rect key="frame" x="152" y="412" width="111" height="73"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <state key="normal" title="Button"/>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.92156862745098034" green="0.92549019607843142" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="gYx-gk-dJa"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8ko-8K-HVO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1511.5942028985507" y="106.47321428571428"/>
+            <point key="canvasLocation" x="1431.8840579710145" y="105.80357142857143"/>
         </scene>
         <!--DayView-->
         <scene sceneID="CUD-TF-6AQ">
@@ -782,6 +780,12 @@
                     <view key="view" contentMode="scaleToFill" id="hcq-9Q-PHA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="blankCircle" translatesAutoresizingMaskIntoConstraints="NO" id="rym-cw-0pp">
+                                <rect key="frame" x="87" y="334" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="3l8-9A-LQ6"/>
                     </view>
@@ -793,6 +797,7 @@
     </scenes>
     <resources>
         <image name="Rectangle 9" width="154" height="154"/>
+        <image name="blankCircle" width="154" height="154"/>
         <image name="buttonDayComplete" width="154" height="154"/>
         <image name="buttonDayPass" width="154" height="154"/>
         <image name="buttonDayRest" width="154" height="154"/>
