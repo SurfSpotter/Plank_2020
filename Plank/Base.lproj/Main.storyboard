@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Idj-3Z-DRk">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="82w-Rl-umz">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -147,7 +147,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="-19" translatesAutoresizingMaskIntoConstraints="NO" id="xaG-Wf-m3G">
-                                <rect key="frame" x="10" y="146" width="394" height="469"/>
+                                <rect key="frame" x="10" y="138" width="394" height="469"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="-19" translatesAutoresizingMaskIntoConstraints="NO" id="uC1-wv-qjk">
                                         <rect key="frame" x="0.0" y="0.0" width="394" height="94"/>
@@ -164,6 +164,7 @@
                                                 <state key="highlighted" backgroundImage="Rectangle 9"/>
                                                 <connections>
                                                     <action selector="daysButtonsActionWithSender:" destination="82w-Rl-umz" eventType="touchUpInside" id="xVG-P9-Tg8"/>
+                                                    <segue destination="Idj-3Z-DRk" kind="show" id="9xF-OH-i05"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FwN-Nm-h5x">
@@ -585,7 +586,7 @@
                                 <variation key="heightClass=regular-widthClass=regular" spacing="-50"/>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let start your first  of 30 plank training day!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d8m-fB-YVT">
-                                <rect key="frame" x="79" y="70" width="256" height="38"/>
+                                <rect key="frame" x="71" y="70" width="272" height="38"/>
                                 <fontDescription key="fontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="19"/>
                                 <color key="textColor" red="0.42745098039215684" green="0.45882352941176469" blue="0.52941176470588236" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -593,14 +594,15 @@
                                     <fontDescription key="fontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="30"/>
                                 </variation>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lGK-cP-o8V">
-                                <rect key="frame" x="345" y="54" width="57" height="57"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lGK-cP-o8V">
+                                <rect key="frame" x="353" y="54" width="43" height="43"/>
                                 <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="dOB-Gk-U79"/>
                                     <constraint firstAttribute="width" secondItem="lGK-cP-o8V" secondAttribute="height" multiplier="1:1" id="deR-Tf-MX3"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <color key="tintColor" red="0.42745098039215684" green="0.45882352941176469" blue="0.52941176470588236" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" image="gear" catalog="system">
+                                <state key="normal" backgroundImage="gearBtnCustom">
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="light"/>
                                 </state>
                                 <connections>
@@ -608,12 +610,12 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bGE-0h-N1n">
-                                <rect key="frame" x="18" y="55" width="51" height="51"/>
+                                <rect key="frame" x="18" y="55" width="43" height="43"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="bGE-0h-N1n" secondAttribute="height" multiplier="1:1" id="OjB-19-0Vl"/>
                                 </constraints>
                                 <color key="tintColor" red="0.42745098039215684" green="0.45882352941176469" blue="0.52941176470588236" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" image="info.circle" catalog="system">
+                                <state key="normal" backgroundImage="infoBtnCustom">
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="light"/>
                                 </state>
                                 <connections>
@@ -685,11 +687,11 @@
             <objects>
                 <viewController storyboardIdentifier="TimerController" title="TimerController" id="Idj-3Z-DRk" customClass="TimerController" customModule="Plank" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Tm2-Zm-OcM">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sPH-n5-t6D" userLabel="ProgressBarView">
-                                <rect key="frame" x="10" y="377" width="394" height="142"/>
+                                <rect key="frame" x="10" y="350" width="394" height="142"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ImgTimerCircle" translatesAutoresizingMaskIntoConstraints="NO" id="mOg-Rz-TMP">
                                         <rect key="frame" x="-140" y="-49" width="674" height="240"/>
@@ -704,7 +706,7 @@
                                                 <real key="value" value="35"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="number" keyPath="decimalPlaces">
-                                                <integer key="value" value="0"/>
+                                                <integer key="value" value="10"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="number" keyPath="progressLineWidth">
                                                 <real key="value" value="11"/>
@@ -729,13 +731,21 @@
                                                 <color key="value" red="0.42745098040000001" green="0.45882352939999999" blue="0.52941176469999995" alpha="1" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="number" keyPath="progressCapType">
-                                                <integer key="value" value="1"/>
+                                                <integer key="value" value="0"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="number" keyPath="emptyLineWidth">
                                                 <real key="value" value="10"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="color" keyPath="fontColor">
                                                 <color key="value" red="0.42745098040000001" green="0.45882352939999999" blue="0.52941176469999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="valueFontSize">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="valueFontName" value="29"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="showUnitString" value="NO"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="unitFontSize">
+                                                <real key="value" value="20"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
@@ -746,7 +756,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qjF-bz-Wwk" userLabel="CustomSwitchView">
-                                <rect key="frame" x="290" y="754" width="79" height="57"/>
+                                <rect key="frame" x="290" y="700" width="79" height="57"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SwitchBackGround1.1" translatesAutoresizingMaskIntoConstraints="NO" id="pwi-Sq-PmP">
                                         <rect key="frame" x="0.0" y="0.0" width="79" height="57"/>
@@ -779,19 +789,19 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ticking" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m2W-0x-xsy">
-                                <rect key="frame" x="222.5" y="773" width="59.5" height="19"/>
+                                <rect key="frame" x="222.5" y="719" width="59.5" height="19"/>
                                 <fontDescription key="fontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="19"/>
                                 <color key="textColor" name="CFontColorGray"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ready?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MaX-gp-0Zo">
-                                <rect key="frame" x="10" y="260" width="394" height="25"/>
+                                <rect key="frame" x="10" y="233" width="394" height="25"/>
                                 <fontDescription key="fontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="25"/>
                                 <color key="textColor" name="CFontColorGray"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kvn-6d-OUj">
-                                <rect key="frame" x="130.5" y="594" width="153" height="81"/>
+                                <rect key="frame" x="130.5" y="567" width="153" height="81"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="81" id="CG9-u1-hLi"/>
                                     <constraint firstAttribute="width" constant="153" id="H8f-I9-t8G"/>
@@ -801,14 +811,28 @@
                                     <color key="titleColor" name="CFontColorGray"/>
                                 </state>
                             </button>
+                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c6i-nl-pgT">
+                                <rect key="frame" x="355" y="20" width="49" height="49"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="Tin-fr-lEn"/>
+                                    <constraint firstAttribute="width" constant="49" id="kP6-JJ-K00"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
+                                <state key="normal" backgroundImage="cancelBtnCustom">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="medium"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.92156862745098034" green="0.92549019607843142" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="tintColor" name="CFontColorGray"/>
                         <constraints>
                             <constraint firstItem="gYx-gk-dJa" firstAttribute="bottom" secondItem="qjF-bz-Wwk" secondAttribute="bottom" constant="51" id="1wv-0z-ed5"/>
                             <constraint firstItem="MaX-gp-0Zo" firstAttribute="leading" secondItem="gYx-gk-dJa" secondAttribute="leading" constant="10" id="6ma-la-Ta5"/>
                             <constraint firstItem="kvn-6d-OUj" firstAttribute="centerX" secondItem="Tm2-Zm-OcM" secondAttribute="centerX" id="ChR-nK-uiI"/>
                             <constraint firstItem="gYx-gk-dJa" firstAttribute="trailing" secondItem="MaX-gp-0Zo" secondAttribute="trailing" constant="10" id="Ctx-j8-b2v"/>
                             <constraint firstItem="sPH-n5-t6D" firstAttribute="top" secondItem="MaX-gp-0Zo" secondAttribute="bottom" constant="92" id="Lyn-7s-uBM"/>
+                            <constraint firstItem="gYx-gk-dJa" firstAttribute="trailing" secondItem="c6i-nl-pgT" secondAttribute="trailing" constant="10" id="NUy-kH-OJC"/>
                             <constraint firstItem="sPH-n5-t6D" firstAttribute="leading" secondItem="gYx-gk-dJa" secondAttribute="leading" constant="10" id="O9h-on-cYP"/>
                             <constraint firstItem="qjF-bz-Wwk" firstAttribute="leading" secondItem="m2W-0x-xsy" secondAttribute="trailing" constant="8" id="Q1g-eD-h6M"/>
                             <constraint firstItem="sPH-n5-t6D" firstAttribute="centerX" secondItem="Tm2-Zm-OcM" secondAttribute="centerX" id="S9Y-R0-KsV"/>
@@ -817,9 +841,11 @@
                             <constraint firstItem="gYx-gk-dJa" firstAttribute="trailing" secondItem="sPH-n5-t6D" secondAttribute="trailing" constant="10" id="q4S-QH-dGm"/>
                             <constraint firstItem="sPH-n5-t6D" firstAttribute="centerY" secondItem="Tm2-Zm-OcM" secondAttribute="centerY" id="tj7-6U-glL"/>
                             <constraint firstItem="m2W-0x-xsy" firstAttribute="centerY" secondItem="pwi-Sq-PmP" secondAttribute="centerY" id="vvL-fj-Y7v"/>
+                            <constraint firstItem="c6i-nl-pgT" firstAttribute="top" secondItem="gYx-gk-dJa" secondAttribute="top" constant="20" id="yen-zZ-xbd"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="gYx-gk-dJa"/>
                     </view>
+                    <navigationItem key="navigationItem" id="wCZ-9o-Dqq"/>
                     <connections>
                         <outlet property="progressBar" destination="XJI-Ev-UD3" id="gDn-eT-22g"/>
                         <outlet property="switchOut" destination="jkq-pw-G2O" id="txE-bC-uVA"/>
@@ -828,7 +854,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8ko-8K-HVO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1430.4347826086957" y="105.80357142857143"/>
+            <point key="canvasLocation" x="1462.3188405797102" y="105.80357142857143"/>
         </scene>
         <!--DayView-->
         <scene sceneID="CUD-TF-6AQ">
@@ -849,10 +875,11 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="R3X-TH-7kP"/>
                     </view>
+                    <navigationItem key="navigationItem" id="ird-vJ-54o"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W58-Da-fAt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2334" y="99"/>
+            <point key="canvasLocation" x="3374" y="106"/>
         </scene>
         <!--Greetings VC-->
         <scene sceneID="Bxv-h2-xIV">
@@ -918,6 +945,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="3l8-9A-LQ6"/>
                     </view>
+                    <navigationItem key="navigationItem" id="xz0-mt-C7U"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qjK-X2-huM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -934,8 +962,9 @@
         <image name="buttonDayPass" width="154" height="154"/>
         <image name="buttonDayRest" width="154" height="154"/>
         <image name="buttonStart" width="431" height="233"/>
-        <image name="gear" catalog="system" width="128" height="119"/>
-        <image name="info.circle" catalog="system" width="128" height="121"/>
+        <image name="cancelBtnCustom" width="154" height="154"/>
+        <image name="gearBtnCustom" width="154" height="154"/>
+        <image name="infoBtnCustom" width="149" height="157"/>
         <namedColor name="CBackGrColorLightGray">
             <color red="0.92156862745098034" green="0.92549019607843142" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
