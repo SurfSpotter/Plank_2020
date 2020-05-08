@@ -26,7 +26,7 @@ class TimerController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
       
-        switchOut.isOn = switchCondition
+        
    
 }
    
@@ -39,6 +39,8 @@ class TimerController: UIViewController {
     
     
     override func viewWillAppear(_ animated: Bool) {
+        print("switchcondition: \(switchCondition)")
+        switchOut.isOn = switchCondition
         
        
     }
