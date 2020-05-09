@@ -30,6 +30,9 @@ class TimerController: UIViewController {
    
 }
    
+    @IBAction func startBtnAct(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
     
     @IBAction func switchBtnAct(_ sender: Any) {
         animateThumbOfSwitch()

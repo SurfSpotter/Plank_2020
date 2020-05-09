@@ -71,6 +71,7 @@ class CalendarController: UIViewController {
         switch button.tag {
         case 1...30: print("button \(button.tag) pushed")
             // Do something
+            animateSuperScale(button: button)
         default:
             print("Unknown button")
             return
