@@ -13,12 +13,17 @@ class WellDoneController: UIViewController {
     @IBOutlet weak var imgRingOut: UIImageView!
     
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-       
+        imgRingOut.isHidden = true
         
         
+    }
+    
+    @IBAction func btn(_ sender: Any) {
+        imgRingOut.flashAnimation()
     }
     
    

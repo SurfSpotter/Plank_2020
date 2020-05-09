@@ -391,6 +391,7 @@
                                                 </state>
                                                 <connections>
                                                     <action selector="daysButtonsActionWithSender:" destination="82w-Rl-umz" eventType="touchUpInside" id="2Va-hm-fMe"/>
+                                                    <segue destination="Fac-iX-18B" kind="show" id="U5W-Zh-10I"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M7v-Ab-odR">
@@ -1068,16 +1069,12 @@ U1RBUlQgFhYWFhYWFhYWFhYWFhYWFhYWFhY
             <objects>
                 <viewController title="DayView" id="Fac-iX-18B" userLabel="WellDone" customClass="WellDoneController" customModule="Plank" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FyA-Uo-bCE">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ImgTimerCircle" translatesAutoresizingMaskIntoConstraints="NO" id="ab8-lZ-YNC">
-                                <rect key="frame" x="74" y="328" width="263" height="240"/>
+                                <rect key="frame" x="74" y="308" width="263" height="226"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bigGreenRing" translatesAutoresizingMaskIntoConstraints="NO" id="ZZf-4d-9MR">
-                                <rect key="frame" x="87" y="340" width="240" height="219"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Well done!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FgN-uG-HWc">
                                 <rect key="frame" x="8" y="273" width="394" height="25"/>
@@ -1086,6 +1083,18 @@ U1RBUlQgFhYWFhYWFhYWFhYWFhYWFhYWFhY
                                 <color key="textColor" name="CFontColorGray"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Ln-Ys-3B5">
+                                <rect key="frame" x="184" y="640" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="btn:" destination="Fac-iX-18B" eventType="touchUpInside" id="IFp-Sy-IrZ"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bigGreenRing" translatesAutoresizingMaskIntoConstraints="NO" id="ZZf-4d-9MR">
+                                <rect key="frame" x="95" y="320" width="225" height="206"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="R3X-TH-7kP"/>

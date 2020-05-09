@@ -28,7 +28,15 @@ extension UIButton {
 extension UIImageView {
 
     func flashAnimation() {
-      
+        self.isHidden = false
+      let flash = CABasicAnimation(keyPath: "opacity")
+        flash.fromValue = 0.1
+        flash.toValue = 1.0
+        flash.duration = 2
+        flash.timingFunction = CAMediaTimingFunction(name: .easeIn)
+        //flash.autoreverses = true
+        //flash.repeatCount = 1
+        layer.add(flash, forKey: nil)
     }
 }
     /*
