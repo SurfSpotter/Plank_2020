@@ -10,6 +10,9 @@ import UIKit
 
 class SettingsController: UIViewController {
 
+    
+    
+    
     @IBOutlet weak var diffSliderOut: UISlider!
     @IBOutlet weak var diffSliderLaberOut: UILabel!
     @IBOutlet weak var diffSliderThumble: UIImageView!
@@ -23,26 +26,23 @@ class SettingsController: UIViewController {
        
     }
     
+    
+    
+    override func viewWillLayoutSubviews() {
+        self.diffSliderThumble.frame = CGRect(x: 118.0, y: 0 , width: 36, height: 38)
+    
+        
+    }
+    
 
     @IBAction func diffSliderAct(_ sender: Any) {
         print(Int(diffSliderOut.value))
         diffSliderLaberOut.text = "\(Int(diffSliderOut.value))" + "sec"
-        self.diffSliderLaberOut.frame = CGRect(x: 106 + (Int(diffSliderOut.value)) , y: 36 , width: 60, height: 30)
-        self.diffSliderThumble.frame = CGRect(x: 118 + (Int(diffSliderOut.value)) , y: 0 , width: 60, height: 30)
+        self.diffSliderLaberOut.frame = CGRect(x: (106.0 + (Double(diffSliderOut.value)) * 0.85833333) , y: 36 , width: 67, height: 30)
+        self.diffSliderThumble.frame = CGRect(x: (118.0 + Double(diffSliderOut.value) * 0.85833333) , y: 0 , width: 36, height: 38)
         
         
-        /*
-
-         if switchCondition { UIView.animate(withDuration: 0.21) {
-             self.switchThumb.frame = CGRect(x: 32, y: 8, width: 43, height: 43)
-             }
-         }
-             
-         else { UIView.animate(withDuration: 0.21) {
-             self.switchThumb.frame = CGRect(x: 6, y: 8, width: 43, height: 43)
-             }
-         }
-         */
+      
     }
     
 
