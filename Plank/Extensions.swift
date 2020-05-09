@@ -24,6 +24,13 @@ extension UIButton {
     
     }
 
+
+extension UIImageView {
+
+    func flashAnimation() {
+      
+    }
+}
     /*
      
      

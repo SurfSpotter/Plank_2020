@@ -44,6 +44,14 @@ class SettingsController: UIViewController {
       
     }
     
+    @IBAction func cancelBtnAcion(_ sender: Any) {
+        self.dismiss(animated: true) {
+            
+        }
+    }
+    
+    
+    
 // Made custom string for slider with + and - and localised measures
     
     var sliderValStringUD: String {
