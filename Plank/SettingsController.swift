@@ -26,6 +26,23 @@ class SettingsController: UIViewController {
 
     @IBAction func diffSliderAct(_ sender: Any) {
         print(Int(diffSliderOut.value))
+        diffSliderLaberOut.text = "\(Int(diffSliderOut.value))" + "sec"
+        self.diffSliderLaberOut.frame = CGRect(x: 106 + (Int(diffSliderOut.value)) , y: 36 , width: 60, height: 30)
+        self.diffSliderThumble.frame = CGRect(x: 118 + (Int(diffSliderOut.value)) , y: 0 , width: 60, height: 30)
+        
+        
+        /*
+
+         if switchCondition { UIView.animate(withDuration: 0.21) {
+             self.switchThumb.frame = CGRect(x: 32, y: 8, width: 43, height: 43)
+             }
+         }
+             
+         else { UIView.animate(withDuration: 0.21) {
+             self.switchThumb.frame = CGRect(x: 6, y: 8, width: 43, height: 43)
+             }
+         }
+         */
     }
     
 

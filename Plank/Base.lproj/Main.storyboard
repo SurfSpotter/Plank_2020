@@ -109,7 +109,7 @@
                                 <color key="textColor" name="CFontColorGray"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Uh-AX-cx2">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Uh-AX-cx2" userLabel="Slider">
                                 <rect key="frame" x="71" y="449.5" width="272" height="71"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="separator" translatesAutoresizingMaskIntoConstraints="NO" id="S7O-Zp-Bbl">
@@ -124,13 +124,17 @@
                                             <action selector="diffSliderAct:" destination="AEj-YR-KE1" eventType="valueChanged" id="QSV-8x-nzx"/>
                                         </connections>
                                     </slider>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="ThumbleCustom" translatesAutoresizingMaskIntoConstraints="NO" id="YwA-cS-b62">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ThumbleCustom" translatesAutoresizingMaskIntoConstraints="NO" id="YwA-cS-b62">
                                         <rect key="frame" x="118" y="0.0" width="36" height="38"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="36" id="74Q-vb-XqV"/>
-                                            <constraint firstAttribute="height" constant="38" id="eKo-tu-m5V"/>
-                                        </constraints>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zVW-Xy-jq5">
+                                        <rect key="frame" x="106" y="36" width="60" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" name="CFontColorGray"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -151,16 +155,6 @@
                                     <constraint firstAttribute="height" constant="25.5" id="ZZs-jy-XVj"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <color key="textColor" name="CFontColorGray"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zVW-Xy-jq5">
-                                <rect key="frame" x="186" y="490" width="42" height="31"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="42" id="aul-ax-ov0"/>
-                                    <constraint firstAttribute="height" constant="31" id="ugQ-h5-am8"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" name="CFontColorGray"/>
                                 <nil key="highlightedColor"/>
                             </label>
