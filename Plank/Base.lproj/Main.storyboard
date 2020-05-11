@@ -295,49 +295,6 @@
             </objects>
             <point key="canvasLocation" x="-468" y="90"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="ONA-UH-Rrn">
-            <objects>
-                <viewController id="Tyd-1l-qh4" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="qEl-gf-gQK">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OcB-1d-uNx">
-                                <rect key="frame" x="0.0" y="-50" width="414" height="892"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="eVn-eb-EjO">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="892"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                </view>
-                                <blurEffect style="regular"/>
-                            </visualEffectView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Infi" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QYy-50-jYr">
-                                <rect key="frame" x="64" y="316" width="302" height="162"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="512-h8-erd">
-                                <rect key="frame" x="336" y="34" width="54" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Dismiss"/>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstAttribute="bottom" secondItem="OcB-1d-uNx" secondAttribute="bottom" id="3qC-nu-aor"/>
-                            <constraint firstItem="OcB-1d-uNx" firstAttribute="leading" secondItem="G4o-aR-eoe" secondAttribute="leading" id="7U8-oo-x4G"/>
-                            <constraint firstItem="OcB-1d-uNx" firstAttribute="trailing" secondItem="G4o-aR-eoe" secondAttribute="trailing" id="o2X-HL-ZG1"/>
-                            <constraint firstItem="OcB-1d-uNx" firstAttribute="top" secondItem="qEl-gf-gQK" secondAttribute="top" constant="-50" id="wHi-RB-i9A"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="G4o-aR-eoe"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="34q-9M-Xjr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="202.89855072463769" y="941.51785714285711"/>
-        </scene>
         <!--MainController-->
         <scene sceneID="5VL-7j-GAr">
             <objects>
@@ -820,9 +777,6 @@
                                     <color key="titleColor" name="CFontColorGray"/>
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="light"/>
                                 </state>
-                                <connections>
-                                    <segue destination="Tyd-1l-qh4" kind="presentation" id="4gh-fa-XWg"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.92156862745098034" green="0.92549019607843142" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -1030,6 +984,9 @@ U1RBUlQgFhYWFhYWFhYWFhYWFhYWFhYWFhY
                                 <state key="normal" backgroundImage="cancelBtnCustom">
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="medium"/>
                                 </state>
+                                <connections>
+                                    <action selector="closeBtnAction:" destination="Idj-3Z-DRk" eventType="touchUpInside" id="gZY-OZ-C5V"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.92156862745098034" green="0.92549019607843142" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -1114,53 +1071,61 @@ U1RBUlQgFhYWFhYWFhYWFhYWFhYWFhYWFhY
             </objects>
             <point key="canvasLocation" x="1448" y="-670"/>
         </scene>
-        <!--Greetings VC-->
-        <scene sceneID="Bxv-h2-xIV">
-            <objects>
-                <viewController title="Greetings VC" id="y01-IJ-eBz" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="dUN-hQ-OCY">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Greetings VC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ger-RH-4UJ">
-                                <rect key="frame" x="56" y="293" width="302" height="162"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="b3I-LH-BeQ"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dIL-sb-EQl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="839" y="1918"/>
-        </scene>
         <!--Feelings VC-->
         <scene sceneID="rqu-d2-FDu">
             <objects>
                 <viewController title="Feelings VC" id="9QS-xO-1OJ" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="XHG-M3-EQW">
+                    <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="XHG-M3-EQW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Feelings VC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ui-eX-iVU">
-                                <rect key="frame" x="56" y="263" width="302" height="162"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="alertBgrImgCust" translatesAutoresizingMaskIntoConstraints="NO" id="n4D-EB-BgU">
+                                <rect key="frame" x="73" y="360" width="269" height="176"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="269" id="6Rh-Rp-eRy"/>
+                                    <constraint firstAttribute="height" constant="176" id="dTi-Ja-ehu"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S0g-9E-DC9" customClass="AlertButton" customModule="Plank" customModuleProvider="target">
+                                <rect key="frame" x="109" y="472" width="67" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="backgroundColor" red="0.48627450980392156" green="0.51372549019607838" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="13"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hey yo!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BxJ-pS-Whe">
+                                <rect key="frame" x="119" y="384" width="184" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" name="CustomBlue"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your progress will be lost, you sure to quit?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cDd-TT-7Ab">
+                                <rect key="frame" x="112" y="412" width="191" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" name="CFontColorGray"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p9Q-nt-CmO" customClass="AlertButton" customModule="Plank" customModuleProvider="target">
+                                <rect key="frame" x="239" y="472" width="67" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.23137254901960785" green="0.80000000000000004" blue="0.89411764705882346" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="14"/>
+                                <state key="normal" title="OK">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" name="CBackGrColorLightGray"/>
                         <viewLayoutGuide key="safeArea" id="fg6-5d-oEy"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nMg-xq-gAr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1606" y="1918"/>
+            <point key="canvasLocation" x="-468" y="1699"/>
         </scene>
     </scenes>
     <resources>
@@ -1168,6 +1133,7 @@ U1RBUlQgFhYWFhYWFhYWFhYWFhYWFhYWFhY
         <image name="Rectangle 9" width="154" height="154"/>
         <image name="SwitchBackGround1.1" width="207" height="153"/>
         <image name="ThumbleCustom" width="81" height="81"/>
+        <image name="alertBgrImgCust" width="510" height="357"/>
         <image name="bigGreenRing" width="94" height="94"/>
         <image name="blankCircle" width="154" height="154"/>
         <image name="buttonDayComplete" width="154" height="154"/>

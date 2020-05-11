@@ -9,6 +9,8 @@
 import Foundation
 import UIKit
 
+
+
 extension UIButton {
     func pulsate() {
         let pulse = CASpringAnimation(keyPath: "transform.scale")
@@ -39,18 +41,9 @@ extension UIImageView {
         layer.add(flash, forKey: nil)
     }
 }
-    /*
-     
-     
-     UIView.animate(withDuration: 0.6,
-     animations: {
-         self.button.transform = CGAffineTransform(scaleX: 0.6, y: 0.6)
-     },
-     completion: { _ in
-         UIView.animate(withDuration: 0.6) {
-             self.button.transform = CGAffineTransform.identity
-         }
-     })
-     */
-    
-
+  
+extension UIView {
+    class func loadFromNib<T: UIView>() -> T {
+        return  Bundle.main.loadNibNamed(String(describing: T.self), owner: nil, options: nil)![0] as! T
+}
+}

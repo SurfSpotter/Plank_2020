@@ -16,6 +16,9 @@
 		323EE1D62462B9CD00C23057 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 323EE1D42462B9CD00C23057 /* Montserrat-Regular.ttf */; };
 		323EE1D82463BAA100C23057 /* TimerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323EE1D72463BAA100C23057 /* TimerController.swift */; };
 		3240A522246763560024303E /* WellDoneController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3240A521246763560024303E /* WellDoneController.swift */; };
+		326CBDAC2469B01900026A80 /* AlertButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326CBDAB2469B01900026A80 /* AlertButton.swift */; };
+		326CBDAE2469B2B600026A80 /* AlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 326CBDAD2469B2B600026A80 /* AlertView.xib */; };
+		326CBDB02469B5BB00026A80 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326CBDAF2469B5BB00026A80 /* AlertView.swift */; };
 		3270DCAC24629038000A8A26 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3270DCAB24629038000A8A26 /* Extensions.swift */; };
 		32D3D5AA245EEC6A003AD54C /* CalendarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D3D5A9245EEC6A003AD54C /* CalendarController.swift */; };
 		32D45F6024671D3100D2BD72 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D45F5F24671D3100D2BD72 /* SettingsController.swift */; };
@@ -35,6 +38,9 @@
 		323EE1D42462B9CD00C23057 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
 		323EE1D72463BAA100C23057 /* TimerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerController.swift; sourceTree = "<group>"; };
 		3240A521246763560024303E /* WellDoneController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WellDoneController.swift; sourceTree = "<group>"; };
+		326CBDAB2469B01900026A80 /* AlertButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertButton.swift; sourceTree = "<group>"; };
+		326CBDAD2469B2B600026A80 /* AlertView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlertView.xib; sourceTree = "<group>"; };
+		326CBDAF2469B5BB00026A80 /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 		3270DCAB24629038000A8A26 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		32D3D5A9245EEC6A003AD54C /* CalendarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarController.swift; sourceTree = "<group>"; };
 		32D45F5F24671D3100D2BD72 /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
@@ -77,8 +83,8 @@
 			isa = PBXGroup;
 			children = (
 				323B1B1C2454BD290001A55B /* Main.storyboard */,
-				3240A521246763560024303E /* WellDoneController.swift */,
 				3270DCAA24628C1C000A8A26 /* Controllers */,
+				326CBDAA2469AFD700026A80 /* AlertCustom */,
 				323B1B1F2454BD2F0001A55B /* Assets.xcassets */,
 				3270DCAB24629038000A8A26 /* Extensions.swift */,
 				323B1B162454BD290001A55B /* AppDelegate.swift */,
@@ -87,6 +93,16 @@
 				323B1B242454BD2F0001A55B /* Info.plist */,
 			);
 			path = Plank;
+			sourceTree = "<group>";
+		};
+		326CBDAA2469AFD700026A80 /* AlertCustom */ = {
+			isa = PBXGroup;
+			children = (
+				326CBDAB2469B01900026A80 /* AlertButton.swift */,
+				326CBDAD2469B2B600026A80 /* AlertView.xib */,
+				326CBDAF2469B5BB00026A80 /* AlertView.swift */,
+			);
+			name = AlertCustom;
 			sourceTree = "<group>";
 		};
 		3270DCA924628BF6000A8A26 /* Fonts */ = {
@@ -105,6 +121,7 @@
 				32D3D5A9245EEC6A003AD54C /* CalendarController.swift */,
 				323EE1D72463BAA100C23057 /* TimerController.swift */,
 				32D45F5F24671D3100D2BD72 /* SettingsController.swift */,
+				3240A521246763560024303E /* WellDoneController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -189,6 +206,7 @@
 				323B1B232454BD2F0001A55B /* LaunchScreen.storyboard in Resources */,
 				323B1B202454BD2F0001A55B /* Assets.xcassets in Resources */,
 				323B1B1E2454BD290001A55B /* Main.storyboard in Resources */,
+				326CBDAE2469B2B600026A80 /* AlertView.xib in Resources */,
 				323EE1D62462B9CD00C23057 /* Montserrat-Regular.ttf in Resources */,
 				323EE1D52462B9CD00C23057 /* Montserrat-Regular.otf in Resources */,
 			);
@@ -243,7 +261,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				326CBDAC2469B01900026A80 /* AlertButton.swift in Sources */,
 				32D45F6024671D3100D2BD72 /* SettingsController.swift in Sources */,
+				326CBDB02469B5BB00026A80 /* AlertView.swift in Sources */,
 				3270DCAC24629038000A8A26 /* Extensions.swift in Sources */,
 				32D3D5AA245EEC6A003AD54C /* CalendarController.swift in Sources */,
 				323B1B172454BD290001A55B /* AppDelegate.swift in Sources */,

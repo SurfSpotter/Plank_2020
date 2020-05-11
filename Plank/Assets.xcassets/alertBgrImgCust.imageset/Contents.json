@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Screenshot 2020-05-05 at 22.50.34.png",
+      "filename" : "alertBgrImgCust.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "alertBgrImgCust@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "alertBgrImgCust@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

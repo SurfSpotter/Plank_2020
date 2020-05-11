@@ -14,10 +14,12 @@ import MBCircularProgressBar
 
 class TimerController: UIViewController {
     
-    var switchCondition: Bool = UserDefaults.standard.bool(forKey: "TickingSwitchCondition")
-
-    @IBOutlet weak var progressBar: MBCircularProgressBarView!
+    private var alertView: AlertView!
     
+    
+    
+    var switchCondition: Bool = UserDefaults.standard.bool(forKey: "TickingSwitchCondition")
+    @IBOutlet weak var progressBar: MBCircularProgressBarView!
     @IBOutlet weak var switchOut: UISwitch!
     @IBOutlet weak var switchThumb: UIImageView!
     
@@ -25,11 +27,14 @@ class TimerController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-      
+        
         
    
 }
    
+    @IBAction func closeBtnAction(_ sender: Any) {
+        customAlertView()
+    }
     @IBAction func startBtnAct(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
@@ -56,6 +61,16 @@ class TimerController: UIViewController {
     override func viewDidLayoutSubviews() {
         animateThumbOfSwitch()
     }
+    
+    
+    // load Custom AlertView
+    
+    func customAlertView() {
+      alertView = AlertView.loadFromNib()
+        view.addSubview(alertView)
+        alertView.center = view.center
+    }
+    
     
     // Animation and condition of Custom Switch and UserDefaults
     
