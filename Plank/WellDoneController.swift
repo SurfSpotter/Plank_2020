@@ -26,7 +26,9 @@ class WellDoneController: UIViewController {
         imgRingOut.flashAnimation()
     }
     
-   
+    override func viewDidAppear(_ animated: Bool) {
+        imgRingOut.flashAnimation()
+    }
   
 
 }

@@ -32,7 +32,7 @@ extension UIImageView {
       let flash = CABasicAnimation(keyPath: "opacity")
         flash.fromValue = 0.1
         flash.toValue = 1.0
-        flash.duration = 2
+        flash.duration = 1.2
         flash.timingFunction = CAMediaTimingFunction(name: .easeIn)
         //flash.autoreverses = true
         //flash.repeatCount = 1

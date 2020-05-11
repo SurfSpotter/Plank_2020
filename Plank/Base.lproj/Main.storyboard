@@ -1076,6 +1076,10 @@ U1RBUlQgFhYWFhYWFhYWFhYWFhYWFhYWFhY
                                 <rect key="frame" x="74" y="308" width="263" height="226"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bigGreenRing" translatesAutoresizingMaskIntoConstraints="NO" id="ZZf-4d-9MR">
+                                <rect key="frame" x="95" y="320" width="225" height="206"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Well done!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FgN-uG-HWc">
                                 <rect key="frame" x="8" y="273" width="394" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1083,18 +1087,20 @@ U1RBUlQgFhYWFhYWFhYWFhYWFhYWFhYWFhY
                                 <color key="textColor" name="CFontColorGray"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Ln-Ys-3B5">
-                                <rect key="frame" x="184" y="640" width="46" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="19" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IoL-AU-QcQ">
+                                <rect key="frame" x="164" y="386" width="83" height="74"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="btn:" destination="Fac-iX-18B" eventType="touchUpInside" id="IFp-Sy-IrZ"/>
-                                </connections>
-                            </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bigGreenRing" translatesAutoresizingMaskIntoConstraints="NO" id="ZZf-4d-9MR">
-                                <rect key="frame" x="95" y="320" width="225" height="206"/>
+                                <fontDescription key="fontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="74"/>
+                                <color key="textColor" name="CFontColorGray"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="See you tomorrow?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XuL-1G-tlt">
+                                <rect key="frame" x="8" y="542" width="394" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                                <fontDescription key="fontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="25"/>
+                                <color key="textColor" name="CFontColorGray"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="R3X-TH-7kP"/>
@@ -1106,7 +1112,7 @@ U1RBUlQgFhYWFhYWFhYWFhYWFhYWFhYWFhY
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W58-Da-fAt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="679.71014492753625" y="-668.30357142857144"/>
+            <point key="canvasLocation" x="1448" y="-670"/>
         </scene>
         <!--Greetings VC-->
         <scene sceneID="Bxv-h2-xIV">
