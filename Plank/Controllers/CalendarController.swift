@@ -71,7 +71,10 @@ class CalendarController: UIViewController {
         switch button.tag {
         case 1...30: print("button \(button.tag) pushed")
             // Do something
+        animateAlertIn()
+        
             animateSuperScale(button: button)
+
         default:
             print("Unknown button")
             return
@@ -80,8 +83,89 @@ class CalendarController: UIViewController {
     
     
     
+
+       
+        // MARK:- Custom Rate Alert:
+        // Кастомный алерт инициализация
+         private lazy var alertRate: AlertRateMe = {
+             let alertRate: AlertRateMe = AlertRateMe.loadFromNib()
+             return alertRate
+             
+         }()
+         // View которая при показе алерта делает экран полупрозрачным
+         let alphaView : UIView = {
+             let alphaView = UIView()
+             alphaView.backgroundColor = .white
+             alphaView.alpha = 0.4
+             return alphaView
+         }()
+        
+        // load Custom AlertView
+        
+        func customRateView() {
+            
+            setup_alphaView()
+            view.addSubview(alertRate)
+           // alertView.frame.size.width =  view.bounds.width / 1.2
+            alertRate.center = view.center
+            alertRate.leftBtnOut.addTarget(self, action: #selector(letfButtonPressed), for: .touchUpInside)
+            alertRate.rightBtnOut.addTarget(self, action: #selector(rightButtonPressed), for: .touchUpInside)
+        }
+        
+        // функци крепления alphaView - засветления фона
+        func setup_alphaView() {
+            view.addSubview(alphaView)
+            alphaView.frame = view.bounds
+        }
+        
+        // Селекторы для кнопок алерта
+        
+        @objc func letfButtonPressed() {
+            print("User doesn't like it app")
+            animateAlertOut()
+        }
+        
+        @objc func rightButtonPressed() {
+            
+            // call rate Manager Here!
+            
+            print("User like it app")
+        }
+        
+        
+        // Анимация кастомного алерта
+        
+        func animateAlertIn() {
+            customRateView()
+            alertRate.transform = CGAffineTransform(scaleX: 1.3, y: 1.3)
+            alertRate.alpha = 0
+            
+            UIView.animate(withDuration: 0.4) {
+                self.alphaView.alpha = 0.5
+                self.alertRate.alpha = 1.0
+                self.alertRate.transform = CGAffineTransform.identity
+            }    }
+        
+        
+        func animateAlertOut() {
+            
+            UIView.animate(withDuration: 0.4, animations: {
+                self.alertRate.transform = CGAffineTransform(scaleX: 1.3, y: 1.3)
+                self.alertRate.alpha = 0
+                self.alphaView.alpha = 0
+            }) { (_) in
+                self.alphaView.removeFromSuperview()
+                self.alertRate.removeFromSuperview()
+            }
+        }
+        
+        
+        
     
-    // MARK : Animate Functions
+    
+    
+    
+    // MARK:- Animate Functions
     
     
     
