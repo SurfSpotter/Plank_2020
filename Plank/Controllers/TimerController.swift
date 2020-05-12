@@ -14,7 +14,9 @@ import MBCircularProgressBar
 
 class TimerController: UIViewController {
     
-    private var alertView: AlertView!
+    
+    
+ 
     
     
     
@@ -29,11 +31,13 @@ class TimerController: UIViewController {
         super.viewDidLoad()
         
         
-   
-}
-   
+        
+    }
+    
     @IBAction func closeBtnAction(_ sender: Any) {
-        customAlertView()
+        
+        
+        animateAlertIn()
     }
     @IBAction func startBtnAct(_ sender: Any) {
         dismiss(animated: true, completion: nil)
@@ -50,12 +54,12 @@ class TimerController: UIViewController {
         print("switchcondition: \(switchCondition)")
         switchOut.isOn = switchCondition
         
-       
+        
     }
     
     override func viewWillLayoutSubviews() {
         progressBar.layer.zPosition = 5
-    
+        
         
     }
     override func viewDidLayoutSubviews() {
@@ -63,31 +67,101 @@ class TimerController: UIViewController {
     }
     
     
+
+ // MARK:- Custom Alert:
+    
+    // Кастомный алерт инициализация
+     private lazy var alertView: AlertView = {
+         let alertView: AlertView = AlertView.loadFromNib()
+         return alertView
+         
+     }()
+     
+     
+     // View которая при показе алерта делает экран полупрозрачным
+     let alphaView : UIView = {
+         let alphaView = UIView()
+         alphaView.backgroundColor = .white
+         alphaView.alpha = 0.4
+         return alphaView
+     }()
+    
     // load Custom AlertView
     
     func customAlertView() {
-      alertView = AlertView.loadFromNib()
+        
+        setup_alphaView()
         view.addSubview(alertView)
+        
+        //alertView.set(Title: <#T##String#>, Description: <#T##String#>, LBut: <#T##String#>, RBut: <#T##String#>) // кастомное название
+       // alertView.frame.size.width =  view.bounds.width / 1.2
         alertView.center = view.center
+        alertView.leftButtonOut.addTarget(self, action: #selector(letfButtonPressed), for: .touchUpInside)
+        alertView.rightButtonOut.addTarget(self, action: #selector(rightButtonPressed), for: .touchUpInside)
+    }
+    
+    // функци крепления alphaView - засветления фона
+    func setup_alphaView() {
+        view.addSubview(alphaView)
+        alphaView.frame = view.bounds
+    }
+    
+    // Селекторы для кнопок алерта
+    
+    @objc func letfButtonPressed() {
+        print("leftButton is pressed")
+        animateAlertOut()
+    }
+    
+    @objc func rightButtonPressed() {
+        print("rightButton is pressed")
     }
     
     
-    // Animation and condition of Custom Switch and UserDefaults
+    // Анимация кастомного алерта
+    
+    func animateAlertIn() {
+        customAlertView()
+        alertView.transform = CGAffineTransform(scaleX: 1.3, y: 1.3)
+        alertView.alpha = 0
+        
+        UIView.animate(withDuration: 0.4) {
+            self.alphaView.alpha = 0.5
+            self.alertView.alpha = 1.0
+            self.alertView.transform = CGAffineTransform.identity
+        }    }
+    
+    
+    func animateAlertOut() {
+        
+        UIView.animate(withDuration: 0.4, animations: {
+            self.alertView.transform = CGAffineTransform(scaleX: 1.3, y: 1.3)
+            self.alertView.alpha = 0
+            self.alphaView.alpha = 0
+        }) { (_) in
+            self.alphaView.removeFromSuperview()
+            self.alertView.removeFromSuperview()
+        }
+    }
+    
+ //MARK: - Custom Switch
+    
+    // анимация кастомного увеличенного ползунка у UISwitch
     
     fileprivate func animateThumbOfSwitch() {
-           let conditionNow = switchOut.isOn
-           switchCondition = conditionNow
-           if switchCondition { UIView.animate(withDuration: 0.21) {
-               self.switchThumb.frame = CGRect(x: 32, y: 8, width: 43, height: 43)
-               }
-           }
-               
-           else { UIView.animate(withDuration: 0.21) {
-               self.switchThumb.frame = CGRect(x: 6, y: 8, width: 43, height: 43)
-               }
-           }
+        let conditionNow = switchOut.isOn
+        switchCondition = conditionNow
+        if switchCondition { UIView.animate(withDuration: 0.21) {
+            self.switchThumb.frame = CGRect(x: 32, y: 8, width: 43, height: 43)
+            }
+        }
+            
+        else { UIView.animate(withDuration: 0.21) {
+            self.switchThumb.frame = CGRect(x: 6, y: 8, width: 43, height: 43)
+            }
+        }
         //UserDefaults.standard.bool(forKey: "TickingSwitchCondition")
         UserDefaults.standard.set(conditionNow, forKey: "TickingSwitchCondition")
-       }
+    }
 }
 

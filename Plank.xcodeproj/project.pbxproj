@@ -19,6 +19,8 @@
 		326CBDAC2469B01900026A80 /* AlertButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326CBDAB2469B01900026A80 /* AlertButton.swift */; };
 		326CBDAE2469B2B600026A80 /* AlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 326CBDAD2469B2B600026A80 /* AlertView.xib */; };
 		326CBDB02469B5BB00026A80 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326CBDAF2469B5BB00026A80 /* AlertView.swift */; };
+		326CBDB3246A87C200026A80 /* AlertRateMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326CBDB2246A87C200026A80 /* AlertRateMe.swift */; };
+		326CBDB5246A87D100026A80 /* AlertRateMe.xib in Resources */ = {isa = PBXBuildFile; fileRef = 326CBDB4246A87D100026A80 /* AlertRateMe.xib */; };
 		3270DCAC24629038000A8A26 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3270DCAB24629038000A8A26 /* Extensions.swift */; };
 		32D3D5AA245EEC6A003AD54C /* CalendarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D3D5A9245EEC6A003AD54C /* CalendarController.swift */; };
 		32D45F6024671D3100D2BD72 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D45F5F24671D3100D2BD72 /* SettingsController.swift */; };
@@ -41,6 +43,8 @@
 		326CBDAB2469B01900026A80 /* AlertButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertButton.swift; sourceTree = "<group>"; };
 		326CBDAD2469B2B600026A80 /* AlertView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlertView.xib; sourceTree = "<group>"; };
 		326CBDAF2469B5BB00026A80 /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
+		326CBDB2246A87C200026A80 /* AlertRateMe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertRateMe.swift; sourceTree = "<group>"; };
+		326CBDB4246A87D100026A80 /* AlertRateMe.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlertRateMe.xib; sourceTree = "<group>"; };
 		3270DCAB24629038000A8A26 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		32D3D5A9245EEC6A003AD54C /* CalendarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarController.swift; sourceTree = "<group>"; };
 		32D45F5F24671D3100D2BD72 /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
@@ -85,6 +89,7 @@
 				323B1B1C2454BD290001A55B /* Main.storyboard */,
 				3270DCAA24628C1C000A8A26 /* Controllers */,
 				326CBDAA2469AFD700026A80 /* AlertCustom */,
+				326CBDB1246A876D00026A80 /* AlertRateCustom */,
 				323B1B1F2454BD2F0001A55B /* Assets.xcassets */,
 				3270DCAB24629038000A8A26 /* Extensions.swift */,
 				323B1B162454BD290001A55B /* AppDelegate.swift */,
@@ -103,6 +108,15 @@
 				326CBDAF2469B5BB00026A80 /* AlertView.swift */,
 			);
 			name = AlertCustom;
+			sourceTree = "<group>";
+		};
+		326CBDB1246A876D00026A80 /* AlertRateCustom */ = {
+			isa = PBXGroup;
+			children = (
+				326CBDB2246A87C200026A80 /* AlertRateMe.swift */,
+				326CBDB4246A87D100026A80 /* AlertRateMe.xib */,
+			);
+			name = AlertRateCustom;
 			sourceTree = "<group>";
 		};
 		3270DCA924628BF6000A8A26 /* Fonts */ = {
@@ -205,6 +219,7 @@
 			files = (
 				323B1B232454BD2F0001A55B /* LaunchScreen.storyboard in Resources */,
 				323B1B202454BD2F0001A55B /* Assets.xcassets in Resources */,
+				326CBDB5246A87D100026A80 /* AlertRateMe.xib in Resources */,
 				323B1B1E2454BD290001A55B /* Main.storyboard in Resources */,
 				326CBDAE2469B2B600026A80 /* AlertView.xib in Resources */,
 				323EE1D62462B9CD00C23057 /* Montserrat-Regular.ttf in Resources */,
@@ -269,6 +284,7 @@
 				323B1B172454BD290001A55B /* AppDelegate.swift in Sources */,
 				323B1B192454BD290001A55B /* SceneDelegate.swift in Sources */,
 				323EE1D82463BAA100C23057 /* TimerController.swift in Sources */,
+				326CBDB3246A87C200026A80 /* AlertRateMe.swift in Sources */,
 				3240A522246763560024303E /* WellDoneController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -14,6 +14,13 @@ class AlertView: UIView {
     @IBOutlet weak var leftButtonOut: AlertButton!
     @IBOutlet weak var rightButtonOut: AlertButton!
     
+    
+    func set(Title: String, Description: String, LBut: String, RBut: String) {
+        alertTitle.text = Title
+        alertDescription.text = Description
+        leftButtonOut.setTitle(LBut, for: .normal)
+        rightButtonOut.setTitle(RBut, for: .normal)
+    }
   
 
 }
