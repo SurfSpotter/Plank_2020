@@ -27,24 +27,42 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7s9-5q-Krv" userLabel="FramesView">
                     <rect key="frame" x="20" y="38" width="255" height="167"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What you think about app?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tNW-ey-fi7">
-                            <rect key="frame" x="22" y="18" width="210" height="17"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What you think about this app?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tNW-ey-fi7">
+                            <rect key="frame" x="22" y="18" width="210" height="34"/>
                             <fontDescription key="fontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="17"/>
                             <color key="textColor" name="CustomBlue"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="59" translatesAutoresizingMaskIntoConstraints="NO" id="Sqj-RG-ixn">
-                            <rect key="frame" x="15" y="121" width="225" height="26"/>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="43" translatesAutoresizingMaskIntoConstraints="NO" id="neh-r7-a5O">
+                            <rect key="frame" x="33" y="76" width="191" height="74"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r0l-3j-cJF">
+                                    <rect key="frame" x="0.0" y="0.0" width="74" height="74"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="74" id="KRF-QU-mba"/>
+                                        <constraint firstAttribute="width" constant="74" id="dl0-tV-OfX"/>
+                                    </constraints>
+                                    <state key="normal" backgroundImage="rateBadSmile"/>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jbY-3I-3JQ">
+                                    <rect key="frame" x="117" y="0.0" width="74" height="74"/>
+                                    <state key="normal" backgroundImage="rateNiceSmile"/>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="r0l-3j-cJF" firstAttribute="width" secondItem="jbY-3I-3JQ" secondAttribute="width" id="PJF-Qi-Knj"/>
+                                <constraint firstItem="r0l-3j-cJF" firstAttribute="height" secondItem="jbY-3I-3JQ" secondAttribute="height" id="wkH-KV-sd8"/>
+                            </constraints>
                         </stackView>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstItem="tNW-ey-fi7" firstAttribute="top" secondItem="7s9-5q-Krv" secondAttribute="top" constant="18" id="7JC-0g-PJZ"/>
                         <constraint firstItem="tNW-ey-fi7" firstAttribute="leading" secondItem="7s9-5q-Krv" secondAttribute="leading" constant="22" id="8wx-iN-19J"/>
+                        <constraint firstAttribute="trailing" secondItem="neh-r7-a5O" secondAttribute="trailing" constant="31" id="Dlt-7L-q6a"/>
                         <constraint firstAttribute="trailing" secondItem="tNW-ey-fi7" secondAttribute="trailing" constant="23" id="S68-Nm-ytI"/>
-                        <constraint firstAttribute="trailing" secondItem="Sqj-RG-ixn" secondAttribute="trailing" constant="15" id="ZGJ-sK-3Cp"/>
-                        <constraint firstAttribute="bottom" secondItem="Sqj-RG-ixn" secondAttribute="bottom" constant="20" id="hyY-7e-qON"/>
-                        <constraint firstItem="Sqj-RG-ixn" firstAttribute="leading" secondItem="7s9-5q-Krv" secondAttribute="leading" constant="15" id="jAz-BQ-sRq"/>
+                        <constraint firstItem="neh-r7-a5O" firstAttribute="leading" secondItem="7s9-5q-Krv" secondAttribute="leading" constant="33" id="ZKQ-IX-l5z"/>
+                        <constraint firstAttribute="bottom" secondItem="neh-r7-a5O" secondAttribute="bottom" constant="17" id="fyj-h4-S06"/>
                     </constraints>
                 </view>
             </subviews>
@@ -75,6 +93,8 @@
     </objects>
     <resources>
         <image name="alertBgrImgCust" width="510" height="357"/>
+        <image name="rateBadSmile" width="512" height="512"/>
+        <image name="rateNiceSmile" width="512" height="512"/>
         <namedColor name="CustomBlue">
             <color red="0.086274509803921567" green="0.32941176470588235" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
