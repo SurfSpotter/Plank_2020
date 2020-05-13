@@ -1029,37 +1029,60 @@ U1RBUlQgFhYWFhYWFhYWFhYWFhYWFhYWFhY
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ImgTimerCircle" translatesAutoresizingMaskIntoConstraints="NO" id="ab8-lZ-YNC">
-                                <rect key="frame" x="74" y="308" width="263" height="226"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ImgTimerCircle" translatesAutoresizingMaskIntoConstraints="NO" id="ab8-lZ-YNC">
+                                <rect key="frame" x="75" y="308" width="261" height="223"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="261" id="eUd-jk-kD4"/>
+                                    <constraint firstAttribute="height" constant="223" id="tca-w9-nfQ"/>
+                                </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bigGreenRing" translatesAutoresizingMaskIntoConstraints="NO" id="ZZf-4d-9MR">
-                                <rect key="frame" x="95" y="320" width="225" height="206"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bigGreenRing" translatesAutoresizingMaskIntoConstraints="NO" id="ZZf-4d-9MR">
+                                <rect key="frame" x="94.5" y="318" width="225" height="206"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="225" id="8tP-Ss-EK3"/>
+                                    <constraint firstAttribute="height" constant="206" id="Ikl-wI-R5g"/>
+                                </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Well done!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FgN-uG-HWc">
-                                <rect key="frame" x="8" y="273" width="394" height="25"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Well done!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FgN-uG-HWc">
+                                <rect key="frame" x="10" y="273" width="394" height="25"/>
                                 <fontDescription key="fontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="25"/>
                                 <color key="textColor" name="CFontColorGray"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="19" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IoL-AU-QcQ">
-                                <rect key="frame" x="164" y="386" width="83" height="74"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11" textAlignment="center" lineBreakMode="middleTruncation" numberOfLines="0" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IoL-AU-QcQ">
+                                <rect key="frame" x="165.5" y="380" width="83" height="83"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="83" id="Yih-aA-8uT"/>
+                                    <constraint firstAttribute="height" constant="83" id="oC2-yE-Bva"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="74"/>
                                 <color key="textColor" name="CFontColorGray"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="See you tomorrow?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XuL-1G-tlt">
-                                <rect key="frame" x="8" y="542" width="394" height="25"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="See you tomorrow?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XuL-1G-tlt">
+                                <rect key="frame" x="10" y="549" width="394" height="25"/>
                                 <fontDescription key="fontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="25"/>
                                 <color key="textColor" name="CFontColorGray"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ab8-lZ-YNC" firstAttribute="centerX" secondItem="FyA-Uo-bCE" secondAttribute="centerX" constant="-1.5" id="67u-uI-46s"/>
+                            <constraint firstItem="R3X-TH-7kP" firstAttribute="trailing" secondItem="FgN-uG-HWc" secondAttribute="trailing" constant="10" id="6yf-G0-dx0"/>
+                            <constraint firstItem="ZZf-4d-9MR" firstAttribute="centerY" secondItem="FyA-Uo-bCE" secondAttribute="centerY" id="A7k-T7-dD2"/>
+                            <constraint firstItem="ab8-lZ-YNC" firstAttribute="centerY" secondItem="FyA-Uo-bCE" secondAttribute="centerY" constant="-1.5" id="CMA-px-7R1"/>
+                            <constraint firstItem="ZZf-4d-9MR" firstAttribute="centerX" secondItem="FyA-Uo-bCE" secondAttribute="centerX" id="Mce-s3-fkm"/>
+                            <constraint firstItem="R3X-TH-7kP" firstAttribute="trailing" secondItem="XuL-1G-tlt" secondAttribute="trailing" constant="10" id="Quy-9k-1wG"/>
+                            <constraint firstItem="XuL-1G-tlt" firstAttribute="leading" secondItem="R3X-TH-7kP" secondAttribute="leading" constant="10" id="Sci-bR-Swg"/>
+                            <constraint firstItem="ab8-lZ-YNC" firstAttribute="top" secondItem="FgN-uG-HWc" secondAttribute="bottom" constant="10" id="X9g-21-0sv"/>
+                            <constraint firstItem="IoL-AU-QcQ" firstAttribute="centerY" secondItem="FyA-Uo-bCE" secondAttribute="centerY" constant="0.5" id="c9n-Ec-Vh2"/>
+                            <constraint firstItem="FgN-uG-HWc" firstAttribute="leading" secondItem="R3X-TH-7kP" secondAttribute="leading" constant="10" id="dmH-Vp-ff3"/>
+                            <constraint firstItem="IoL-AU-QcQ" firstAttribute="centerX" secondItem="FyA-Uo-bCE" secondAttribute="centerX" id="iTg-XO-Mgw"/>
+                            <constraint firstItem="XuL-1G-tlt" firstAttribute="top" secondItem="ab8-lZ-YNC" secondAttribute="bottom" constant="18" id="sfX-ut-Ez2"/>
+                            <constraint firstItem="ab8-lZ-YNC" firstAttribute="centerY" secondItem="FyA-Uo-bCE" secondAttribute="centerY" constant="-1.5" id="uzf-RJ-6xY"/>
+                            <constraint firstItem="ab8-lZ-YNC" firstAttribute="centerX" secondItem="FyA-Uo-bCE" secondAttribute="centerX" constant="-1.5" id="w7q-ll-2pk"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="R3X-TH-7kP"/>
                     </view>
                     <navigationItem key="navigationItem" id="ird-vJ-54o"/>
@@ -1071,69 +1094,12 @@ U1RBUlQgFhYWFhYWFhYWFhYWFhYWFhYWFhY
             </objects>
             <point key="canvasLocation" x="1448" y="-670"/>
         </scene>
-        <!--Feelings VC-->
-        <scene sceneID="rqu-d2-FDu">
-            <objects>
-                <viewController title="Feelings VC" id="9QS-xO-1OJ" sceneMemberID="viewController">
-                    <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="XHG-M3-EQW">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="alertBgrImgCust" translatesAutoresizingMaskIntoConstraints="NO" id="n4D-EB-BgU">
-                                <rect key="frame" x="73" y="360" width="269" height="176"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="269" id="6Rh-Rp-eRy"/>
-                                    <constraint firstAttribute="height" constant="176" id="dTi-Ja-ehu"/>
-                                </constraints>
-                            </imageView>
-                            <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S0g-9E-DC9" customClass="AlertButton" customModule="Plank" customModuleProvider="target">
-                                <rect key="frame" x="109" y="472" width="67" height="38"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.48627450980392156" green="0.51372549019607838" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="13"/>
-                                <state key="normal" title="Cancel">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hey yo!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BxJ-pS-Whe">
-                                <rect key="frame" x="119" y="384" width="184" height="26"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <color key="textColor" name="CustomBlue"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your progress will be lost, you sure to quit?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cDd-TT-7Ab">
-                                <rect key="frame" x="112" y="412" width="191" height="47"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" name="CFontColorGray"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p9Q-nt-CmO" customClass="AlertButton" customModule="Plank" customModuleProvider="target">
-                                <rect key="frame" x="239" y="472" width="67" height="38"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.23137254901960785" green="0.80000000000000004" blue="0.89411764705882346" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="14"/>
-                                <state key="normal" title="OK">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" name="CBackGrColorLightGray"/>
-                        <viewLayoutGuide key="safeArea" id="fg6-5d-oEy"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nMg-xq-gAr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-468" y="1699"/>
-        </scene>
     </scenes>
     <resources>
         <image name="ImgTimerCircle" width="560" height="554"/>
         <image name="Rectangle 9" width="154" height="154"/>
         <image name="SwitchBackGround1.1" width="207" height="153"/>
         <image name="ThumbleCustom" width="81" height="81"/>
-        <image name="alertBgrImgCust" width="510" height="357"/>
         <image name="bigGreenRing" width="94" height="94"/>
         <image name="blankCircle" width="154" height="154"/>
         <image name="buttonDayComplete" width="154" height="154"/>

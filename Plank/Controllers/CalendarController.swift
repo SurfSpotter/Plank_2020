@@ -47,21 +47,38 @@ class CalendarController: UIViewController {
     
     
     
-    
+   var model = Model()
     
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // but1Out.pulsate()
+        //создаем массив из 30 тренировочных дней c 0 по 29
+        model.Alldays = model.createTrainingDays()
+        
+        
+        model.addConditionToUd(inputCondition: .willcomplete, dayNumber: 0 )
+        //model.dateUpdateToUd(inputDateUpdate: Date(), dayNumber: 29)
+        //print(UserDefaults.standard.string(forKey: "conditionUdFor2")!)
+        //UserDefaults.standard.set(Date(), forKey:  "testDate")
+ //       model.dateUpdateToUd(inputDateUpdate: Date(), dayNumber: 0)
+//        print (UserDefaults.standard.object(forKey: "testDate")! as! Date)
+//        print("test Date")
+//
+        //model = Model()
+        for i in model.Alldays {
+            print(i.dateUpdate)
+        }
         
         
         
-        
+         
+    
     }
     
     
+           
         
     @IBAction func daysButtonsAction(sender: AnyObject) {
         guard let button = sender as? UIButton else {
@@ -72,8 +89,7 @@ class CalendarController: UIViewController {
         case 1...30: print("button \(button.tag) pushed")
             // Do something
         animateAlertIn()
-        
-            animateSuperScale(button: button)
+        animateSuperScale(button: button)
 
         default:
             print("Unknown button")
