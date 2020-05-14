@@ -40,6 +40,7 @@ class Model {
     
     // Создаем массив с включенными параметрами из UserDefaults
     func createTrainingDays() -> [Day] {
+        
         for countOfDay in 0...29  {
             
             let DayCreated = Day(numberDay: countOfDay)
@@ -97,4 +98,10 @@ class Model {
         UserDefaults.standard.set(inputDateUpdate, forKey:  "dateUpdateFor\(dayNumber)")
         Alldays[dayNumber].dateUpdate = inputDateUpdate
     }
+    
+    
+    func clearUdDayConditions() {
+        for i in 0...29 {
+        addConditionToUd(inputCondition: .willcomplete, dayNumber: i)
+        } }
 }
