@@ -56,8 +56,6 @@ class CalendarController: UIViewController {
         
         //создаем массив из 30 тренировочных дней c 0 по 29
         model.Alldays = model.createTrainingDays()
-        
-        
         model.addConditionToUd(inputCondition: .willcomplete, dayNumber: 0 )
         //model.dateUpdateToUd(inputDateUpdate: Date(), dayNumber: 29)
         //print(UserDefaults.standard.string(forKey: "conditionUdFor2")!)
@@ -67,14 +65,27 @@ class CalendarController: UIViewController {
 //        print("test Date")
 //
         //model = Model()
-        for i in model.Alldays {
-            print(i.dateUpdate)
-        }
+//        for i in model.Alldays {
+//            switch i.condition {
+//            case .complete : print ("complete")
+//            (("butOut" + String(i.number + 1)) as! UIButton).setTitle("H", for: .normal)
+//            case .passed : print ("passed")
+//            case .rest : print("rest")
+//            case .willcomplete : print("willcomplete")
+//                (("butOut" + String(i.number + 1)) as! UIButton)
+//            }
+//        }
+        
+        //("butOut1" as! UIButton).setBackgroundImage(UIImage(named: "blankCircle"), for: .normal)
         
         
+       // butOut1.setBackgroundImage(, for: <#T##UIControl.State#>)
+       
+      
         
-         
-    
+       
+        
+        
     }
     
     

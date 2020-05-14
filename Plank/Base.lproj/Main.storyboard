@@ -311,6 +311,7 @@
                                         <subviews>
                                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5dt-OC-9aI">
                                                 <rect key="frame" x="0.0" y="0.0" width="94" height="94"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="1"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="5dt-OC-9aI" secondAttribute="height" multiplier="1:1" id="z5P-fI-nZ5"/>
                                                 </constraints>
