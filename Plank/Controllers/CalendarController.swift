@@ -25,7 +25,7 @@ class CalendarController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         let _ = model.createTrainingDays()
-       
+        
         
     }
     
@@ -47,8 +47,8 @@ class CalendarController: UIViewController {
         // Do something
         //animateAlertIn()
         animateSuperScale(button: button)
-        selectedDay = model.Alldays[button.tag - 1]
-        if model.Alldays[button.tag - 1].condition == .willcomplete {
+        selectedDay = model.Alldays[button.tag]
+        if model.Alldays[button.tag].condition == .willcomplete {
             performSegue(withIdentifier: "goToTimerController", sender: self)
             print("selected day is \(selectedDay!.condition)")
         }
@@ -178,8 +178,8 @@ class CalendarController: UIViewController {
         // функция устанавливает нужнную картинку кнопки исходя их состояния текущего дня
     for button in dayButtonsOUt {
 //        print(button.tag)
-//        print(model.Alldays[(button.tag) - 1].number)
-        switch (model.Alldays[(button.tag) - 1].condition) {
+//        print(model.Alldays[(button.tag)].number)
+        switch (model.Alldays[(button.tag)].condition) {
         case .complete : print ("complete")
             button.setBackgroundImage(UIImage(named: "buttonDayComplete"), for: .normal)
         case .passed : print ("passed")

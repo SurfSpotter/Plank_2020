@@ -45,8 +45,8 @@ class Model {
     
     // Создаем массив с включенными параметрами из UserDefaults
     func createTrainingDays() -> [Day] {
-        
-        for countOfDay in 0...29  {
+        Alldays.append(Day(numberDay: 0))
+        for countOfDay in 1...30  {
             
             let DayCreated = Day(numberDay: countOfDay)
             DayCreated.completed = UserDefaults.standard.bool(forKey: "completedUDfor\(countOfDay)")
