@@ -831,6 +831,8 @@
                         <outletCollection property="dayButtonsOUt" destination="gvf-eJ-EgW" collectionClass="NSMutableArray" id="Yd0-9t-Jnw"/>
                         <outletCollection property="dayButtonsOUt" destination="OIH-1b-gdP" collectionClass="NSMutableArray" id="KQQ-p3-TJA"/>
                         <outletCollection property="dayButtonsOUt" destination="0k0-P5-wUk" collectionClass="NSMutableArray" id="mAW-mk-s8q"/>
+                        <segue destination="Idj-3Z-DRk" kind="show" identifier="goToTimerController" id="Pex-T8-8rb"/>
+                        <segue destination="Fac-iX-18B" kind="show" identifier="goToWellDoneController" id="7cV-6q-373"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wuj-Os-mjf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -842,11 +844,11 @@
             <objects>
                 <viewController storyboardIdentifier="TimerController" title="TimerController" id="Idj-3Z-DRk" customClass="TimerController" customModule="Plank" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Tm2-Zm-OcM">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sPH-n5-t6D" userLabel="ProgressBarView">
-                                <rect key="frame" x="10" y="377" width="394" height="142"/>
+                                <rect key="frame" x="10" y="350" width="394" height="142"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ImgTimerCircle" translatesAutoresizingMaskIntoConstraints="NO" id="mOg-Rz-TMP">
                                         <rect key="frame" x="-140" y="-49" width="674" height="240"/>
@@ -911,7 +913,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qjF-bz-Wwk" userLabel="CustomSwitchView">
-                                <rect key="frame" x="290" y="754" width="79" height="57"/>
+                                <rect key="frame" x="290" y="700" width="79" height="57"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SwitchBackGround1.1" translatesAutoresizingMaskIntoConstraints="NO" id="pwi-Sq-PmP">
                                         <rect key="frame" x="0.0" y="0.0" width="79" height="57"/>
@@ -944,19 +946,19 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ticking" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m2W-0x-xsy">
-                                <rect key="frame" x="222.5" y="773" width="59.5" height="19"/>
+                                <rect key="frame" x="222.5" y="719" width="59.5" height="19"/>
                                 <fontDescription key="fontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="19"/>
                                 <color key="textColor" name="CFontColorGray"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ready?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MaX-gp-0Zo">
-                                <rect key="frame" x="10" y="260" width="394" height="25"/>
+                                <rect key="frame" x="10" y="233" width="394" height="25"/>
                                 <fontDescription key="fontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="25"/>
                                 <color key="textColor" name="CFontColorGray"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kvn-6d-OUj">
-                                <rect key="frame" x="130.5" y="594" width="153" height="81"/>
+                                <rect key="frame" x="130.5" y="567" width="153" height="81"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="81" id="CG9-u1-hLi"/>
                                     <constraint firstAttribute="width" constant="153" id="H8f-I9-t8G"/>
@@ -973,7 +975,7 @@ U1RBUlQgFhYWFhYWFhYWFhYWFhYWFhYWFhY
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c6i-nl-pgT">
-                                <rect key="frame" x="361" y="64" width="43" height="43"/>
+                                <rect key="frame" x="361" y="20" width="43" height="43"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="43" id="Tin-fr-lEn"/>
@@ -1018,38 +1020,38 @@ U1RBUlQgFhYWFhYWFhYWFhYWFhYWFhYWFhY
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8ko-8K-HVO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1694" y="90"/>
+            <point key="canvasLocation" x="1696" y="106"/>
         </scene>
         <!--WellDone-->
         <scene sceneID="CUD-TF-6AQ">
             <objects>
                 <viewController title="DayView" id="Fac-iX-18B" userLabel="WellDone" customClass="WellDoneController" customModule="Plank" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FyA-Uo-bCE">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ImgTimerCircle" translatesAutoresizingMaskIntoConstraints="NO" id="ab8-lZ-YNC">
-                                <rect key="frame" x="75" y="356" width="261" height="238"/>
+                                <rect key="frame" x="75" y="308" width="261" height="223"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="261" id="eUd-jk-kD4"/>
                                     <constraint firstAttribute="height" constant="223" id="tca-w9-nfQ"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bigGreenRing" translatesAutoresizingMaskIntoConstraints="NO" id="ZZf-4d-9MR">
-                                <rect key="frame" x="94.5" y="345" width="225" height="206"/>
+                                <rect key="frame" x="94.5" y="318" width="225" height="206"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="225" id="8tP-Ss-EK3"/>
                                     <constraint firstAttribute="height" constant="206" id="Ikl-wI-R5g"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Well done!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FgN-uG-HWc">
-                                <rect key="frame" x="10" y="300" width="394" height="25"/>
+                                <rect key="frame" x="10" y="273" width="394" height="25"/>
                                 <fontDescription key="fontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="25"/>
                                 <color key="textColor" name="CFontColorGray"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11" textAlignment="center" lineBreakMode="middleTruncation" numberOfLines="0" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IoL-AU-QcQ">
-                                <rect key="frame" x="165.5" y="407" width="83" height="83"/>
+                                <rect key="frame" x="165.5" y="380" width="83" height="83"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="83" id="Yih-aA-8uT"/>
                                     <constraint firstAttribute="height" constant="83" id="oC2-yE-Bva"/>
@@ -1059,7 +1061,7 @@ U1RBUlQgFhYWFhYWFhYWFhYWFhYWFhYWFhY
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="See you tomorrow?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XuL-1G-tlt">
-                                <rect key="frame" x="10" y="576" width="394" height="25"/>
+                                <rect key="frame" x="10" y="549" width="394" height="25"/>
                                 <fontDescription key="fontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="25"/>
                                 <color key="textColor" name="CFontColorGray"/>
                                 <nil key="highlightedColor"/>

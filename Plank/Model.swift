@@ -17,25 +17,30 @@ enum condEnum: String {
     
 }
 
+
+class Day {
+       var number: Int = 0
+       var completed: Bool = false
+       var condition: condEnum = .rest
+       var feelings: Int = 0
+       var dateUpdate: Date = Date()
+   init(){
+       
+   }
+       init (numberDay: Int) {
+           number = numberDay
+       }
+       
+       
+       
+   }
+
 class Model {
     
     var Alldays: [Day] = []
     
     
-    class Day {
-        var number: Int = 0
-        var completed: Bool = false
-        var condition: condEnum = .rest
-        var feelings: Int = 0
-        var dateUpdate: Date = Date()
-        
-        init (numberDay: Int) {
-            number = numberDay
-        }
-        
-        
-        
-    }
+
     
     
     // Создаем массив с включенными параметрами из UserDefaults

@@ -18,48 +18,14 @@ class CalendarController: UIViewController {
     
     
     var model = Model()
+    var selectedDay: Day?
     
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        //создаем массив из 30 тренировочных дней c 0 по 29
-        model.Alldays = model.createTrainingDays()
-        //model.addConditionToUd(inputCondition: .willcomplete, dayNumber: 0 )
-        //model.dateUpdateToUd(inputDateUpdate: Date(), dayNumber: 29)
-        //print(UserDefaults.standard.string(forKey: "conditionUdFor2")!)
-        //UserDefaults.standard.set(Date(), forKey:  "testDate")
-        //       model.dateUpdateToUd(inputDateUpdate: Date(), dayNumber: 0)
-        //        print (UserDefaults.standard.object(forKey: "testDate")! as! Date)
-        //        print("test Date")
-        //
-        //model = Model()
-        //        for i in model.Alldays {
-        //            switch i.condition {
-        //            case .complete : print ("complete")
-        //            (("butOut" + String(i.number + 1)) as! UIButton).setTitle("H", for: .normal)
-        //            case .passed : print ("passed")
-        //            case .rest : print("rest")
-        //            case .willcomplete : print("willcomplete")
-        //                (("butOut" + String(i.number + 1)) as! UIButton)
-        //            }
-        //        }
-        
-        //("butOut1" as! UIButton).setBackgroundImage(UIImage(named: "blankCircle"), for: .normal)
-        
-        
-        // butOut1.setBackgroundImage(, for: <#T##UIControl.State#>)
-        model.clearUdDayConditions()
-        
-       //model.addConditionToUd(inputCondition: .complete, dayNumber: 10 )
-//        model.addConditionToUd(inputCondition: .rest, dayNumber: 2 )
-//        model.addConditionToUd(inputCondition: .rest, dayNumber: 3 )
-        
-        
-        
-        
-        
+        let _ = model.createTrainingDays()
+       
         
     }
     
@@ -76,17 +42,35 @@ class CalendarController: UIViewController {
         
         switch button.tag {
         case 1...30: print("button \(button.tag) pushed")
+        //selectedDay = Day(numberDay: button.tag)
+        
         // Do something
-        animateAlertIn()
+        //animateAlertIn()
         animateSuperScale(button: button)
+        selectedDay = model.Alldays[button.tag - 1]
+        if model.Alldays[button.tag - 1].condition == .willcomplete {
+            performSegue(withIdentifier: "goToTimerController", sender: self)
+            print("selected day is \(selectedDay!.condition)")
+        }
+        else {
+            performSegue(withIdentifier: "goToWellDoneController", sender: self)
             
+            }
+        
         default:
             print("Unknown button")
             return
         }
     }
     
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToTimerController" {
+            (segue.destination as! TimerController).actualDay = selectedDay
+        }
+        if segue.identifier == "goToWellDoneController" {
+            (segue.destination as! WellDoneController).actualDay = selectedDay
+        }
+    }
     
     
     
