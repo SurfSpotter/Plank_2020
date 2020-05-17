@@ -15,7 +15,7 @@ import MBCircularProgressBar
 class TimerController: UIViewController {
 
     var actualDay: Day?
-    
+    var startDate: Date?
     
     var switchCondition: Bool = UserDefaults.standard.bool(forKey: "TickingSwitchCondition")
     @IBOutlet weak var progressBar: MBCircularProgressBarView!
@@ -39,6 +39,17 @@ class TimerController: UIViewController {
         animateAlertIn()
     }
     @IBAction func startBtnAct(_ sender: Any) {
+        
+//        if startDate == nil {
+//            startDate = ((UserDefaults.standard.set(Date(), forKey: "startDate")) as! Date)
+//        }
+//        
+//        else {
+//            //UserDefaults.standard.object(forKey: "startDate")
+//            print( "start date is already created")
+//        }
+           
+        
         dismiss(animated: true, completion: nil)
     }
     

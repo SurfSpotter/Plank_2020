@@ -19,8 +19,13 @@ class WellDoneController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         imgRingOut.isHidden = true
+        
+    
+        
+        
+//        print("actual day condition from WellDoneController is:")
+//        print(actualDay?.condition)
         
         
     }

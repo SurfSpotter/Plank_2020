@@ -16,15 +16,47 @@ class CalendarController: UIViewController {
     
     @IBOutlet var dayButtonsOUt: [UIButton]!
     
-    
     var model = Model()
     var selectedDay: Day?
-    
+    var startDate: Date?
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         let _ = model.createTrainingDays()
+    //model.clearUdDayConditions() //  не работает
+    
+    
+        
+    // startDate = Date()
+    //  print(startDate)
+        
+        let startDateString = "13/01/2016" // start date
+        let endDateString = "15/01/2016" // end date
+
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "dd/MM/yyyy"
+        
+        
+        
+
+        let startDate: Date = dateFormatter.date(from: startDateString)!
+        let endDate: Date = dateFormatter.date(from: endDateString)!
+
+        let gregorian = NSCalendar(calendarIdentifier:NSCalendar.Identifier.gregorian)
+        let components = gregorian?.components(NSCalendar.Unit.day, from: startDate as Date, to: endDate as Date, options: .matchFirst)
+
+        let day = components?.day
+        if day == 0 {
+          print( "Today")
+        } else {
+          print( "After \(Int64(day!)) day(s)")
+        }
+        
+//        var currentDate : Date? {
+//            get {return dateFormatter.date(from: UserDefaults.standard.string(forKey: "StartDate") ?? "01/01/2020") }
+//            set { UserDefaults.standard.set}
+//        }
         
         
     }
@@ -50,7 +82,7 @@ class CalendarController: UIViewController {
         selectedDay = model.Alldays[button.tag]
         if model.Alldays[button.tag].condition == .willcomplete {
             performSegue(withIdentifier: "goToTimerController", sender: self)
-            print("selected day is \(selectedDay!.condition)")
+            //print("selected day is \(selectedDay!.condition)")
         }
         else {
             performSegue(withIdentifier: "goToWellDoneController", sender: self)
@@ -178,15 +210,16 @@ class CalendarController: UIViewController {
         // функция устанавливает нужнную картинку кнопки исходя их состояния текущего дня
     for button in dayButtonsOUt {
 //        print(button.tag)
-//        print(model.Alldays[(button.tag)].number)
+       // print("alldays Count")
+      //  print(model.Alldays.count)
         switch (model.Alldays[(button.tag)].condition) {
-        case .complete : print ("complete")
+        case .complete :
             button.setBackgroundImage(UIImage(named: "buttonDayComplete"), for: .normal)
-        case .passed : print ("passed")
+        case .passed :
             button.setBackgroundImage(UIImage(named: "buttonDayPass"), for: .normal)
-        case .rest : print("rest")
+        case .rest :
             button.setBackgroundImage(UIImage(named: "buttonDayRest"), for: .normal)
-        case .willcomplete : print("willcomplete")
+        case .willcomplete : 
              button.setBackgroundImage(UIImage(named: "blankCircle"), for: .normal)
             
         }
