@@ -37,8 +37,7 @@ class Day {
 
 class Model {
     
-    var Alldays: [Day] = []
-    
+   
     
 
     var dateStartMarathone: String {
@@ -58,8 +57,37 @@ class Model {
     }
    
      
-     
-  
+   
+   func dateCompareDate(start_Date: Date?, end_Date: Date?) -> Int? {
+          
+               let startDateString = "13/01/2016" // start date
+               let endDateString = "15/01/2016" // end date
+
+               let dateFormatter = DateFormatter()
+               dateFormatter.dateFormat = "dd/MM/yyyy"
+               
+  //             let startDate: Date = dateFormatter.date(from: startDateString)!
+  //             let endDate: Date = dateFormatter.date(from: endDateString)!
+
+               let gregorian = NSCalendar(calendarIdentifier:NSCalendar.Identifier.gregorian)
+          
+          if start_Date != nil && end_Date != nil {
+             
+              let components = gregorian?.components(NSCalendar.Unit.day, from: start_Date! , to: end_Date!, options: .matchFirst)
+
+              let day = components?.day
+              if day == 0 {
+                return 0
+              } else {
+                return day!
+              }
+              
+          }
+          else { print ("Some of compare Date is nil")
+              return nil
+          }
+          
+      }
     
 
     

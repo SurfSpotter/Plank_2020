@@ -21,15 +21,25 @@ class TimerController: UIViewController {
     @IBOutlet weak var progressBar: MBCircularProgressBarView!
     @IBOutlet weak var switchOut: UISwitch!
     @IBOutlet weak var switchThumb: UIImageView!
+    @IBOutlet weak var timerLabelOut: UILabel!
     
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        if let actualDay = actualDay {
-//           
-//        }
+        actualDay?.dateUpdate = Date()
+         print(" compare \(Model().dateCompareDate(start_Date: actualDay?.dateUpdate, end_Date: actualDay?.dateUpdate))")
         
+        
+        print("actual day:")
+        print(actualDay?.condition)
+        print(actualDay?.dateUpdate)
+        
+        
+        // 1 Action
+        if actualDay?.dayNum == 1 && actualDay?.dateUpdate == nil {
+        timerLabelOut.text = "Ready for you first day?"
+        }
         
     }
     
@@ -39,6 +49,7 @@ class TimerController: UIViewController {
         animateAlertIn()
     }
     @IBAction func startBtnAct(_ sender: Any) {
+      
         
 //        if startDate == nil {
 //            startDate = ((UserDefaults.standard.set(Date(), forKey: "startDate")) as! Date)

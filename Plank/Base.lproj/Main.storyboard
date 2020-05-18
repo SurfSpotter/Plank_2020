@@ -1016,6 +1016,7 @@ U1RBUlQgFhYWFhYWFhYWFhYWFhYWFhYWFhY
                         <outlet property="progressBar" destination="XJI-Ev-UD3" id="gDn-eT-22g"/>
                         <outlet property="switchOut" destination="jkq-pw-G2O" id="txE-bC-uVA"/>
                         <outlet property="switchThumb" destination="2yA-yX-rPj" id="MGR-77-KUv"/>
+                        <outlet property="timerLabelOut" destination="MaX-gp-0Zo" id="tcH-nX-XVP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8ko-8K-HVO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1088,7 +1089,9 @@ U1RBUlQgFhYWFhYWFhYWFhYWFhYWFhYWFhY
                     </view>
                     <navigationItem key="navigationItem" id="ird-vJ-54o"/>
                     <connections>
+                        <outlet property="bottomLabelOut" destination="XuL-1G-tlt" id="PXb-ME-izX"/>
                         <outlet property="imgRingOut" destination="ZZf-4d-9MR" id="BpC-DO-fIp"/>
+                        <outlet property="topLabeOut" destination="FgN-uG-HWc" id="o59-py-I9z"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W58-Da-fAt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

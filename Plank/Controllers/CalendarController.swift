@@ -35,36 +35,7 @@ class CalendarController: UIViewController {
         
         print("trDays: \(trDays.count)")
         
-        
-    // startDate = Date()
-    //  print(startDate)
-        
-        let startDateString = "13/01/2016" // start date
-        let endDateString = "15/01/2016" // end date
-
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "dd/MM/yyyy"
-        
-        
-        
-
-        let startDate: Date = dateFormatter.date(from: startDateString)!
-        let endDate: Date = dateFormatter.date(from: endDateString)!
-
-        let gregorian = NSCalendar(calendarIdentifier:NSCalendar.Identifier.gregorian)
-        let components = gregorian?.components(NSCalendar.Unit.day, from: startDate as Date, to: endDate as Date, options: .matchFirst)
-
-        let day = components?.day
-        if day == 0 {
-          print( "Today")
-        } else {
-          print( "After \(Int64(day!)) day(s)")
-        }
-        
-//        var currentDate : Date? {
-//            get {return dateFormatter.date(from: UserDefaults.standard.string(forKey: "StartDate") ?? "01/01/2020") }
-//            set { UserDefaults.standard.set}
-//        }
+     
         
         
     }
@@ -84,29 +55,16 @@ class CalendarController: UIViewController {
         animateSuperScale(button: button) // анимация при нажатии на кнопку дня в календаре
         selectedDay = trDays[button.tag]
         
-        //Если тренировка первого дня не пройдена то другие контроллеры откываеються goToWellDoneController :
-        if trDays[1].condition == "willcomplete" && button.tag != 1 {
+        //1
+        if button.tag == 1 && selectedDay?.condition != "complete"
+        {performSegue(withIdentifier: "goToTimerController", sender: self)}
+        
+        
+        //2.1
+        if button.tag == 1 && selectedDay?.condition == "complete" {
             performSegue(withIdentifier: "goToWellDoneController", sender: self)
         }
-        // если тренировка первого дня пройдена то остальные мы открываем как
-//        else if trDays[1].condition != {
-//            
-//        }
-//        
             
-        // Если тренировка первого дня не продена и ты пользователь нажимает на первый день:
-        else {
-            performSegue(withIdentifier: "goToTimerController", sender: self)}
-            
-            
-            
-//        else {performSegue(withIdentifier: "goToTimerController", sender: self)}
-//
-//        if selectedDay?.condition == "willcomplete" {
-//             performSegue(withIdentifier: "goToTimerController", sender: self)
-//        } else {
-//            performSegue(withIdentifier: "goToWellDoneController", sender: self)
-//            }
 
         default:
             print("Unknown button")
@@ -115,9 +73,9 @@ class CalendarController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if segue.identifier == "goToTimerController" {
-//            (segue.destination as! TimerController).actualDay = selectedDay
-//        }
+        if segue.identifier == "goToTimerController" {
+            (segue.destination as! TimerController).actualDay = selectedDay
+        }
         if segue.identifier == "goToWellDoneController" {
             (segue.destination as! WellDoneController).actualDay = selectedDay
         }

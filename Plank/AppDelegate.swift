@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         
         // to delete all days from CoreData:
-        /*
+       /*
         for i in trDays {
             CoreDataManager.sharedInstance.managedObjectContext.delete(i)
             CoreDataManager.sharedInstance.saveContext()

@@ -14,7 +14,6 @@ public class DayE: NSManagedObject {
     class func newDay(dayNumber: Int16) -> DayE {
         let nDay = DayE(context: CoreDataManager.sharedInstance.managedObjectContext)
         nDay.dayNum = dayNumber
-        nDay.dateUpdate = Date()
         return nDay
     }
 }
