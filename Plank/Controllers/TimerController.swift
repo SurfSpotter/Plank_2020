@@ -26,9 +26,9 @@ class TimerController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        if let actualDay = actualDay {
-           
-        }
+//        if let actualDay = actualDay {
+//           
+//        }
         
         
     }

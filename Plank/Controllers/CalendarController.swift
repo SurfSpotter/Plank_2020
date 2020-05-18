@@ -79,24 +79,35 @@ class CalendarController: UIViewController {
         guard let button = sender as? UIButton else {
             return
         }
-        
         switch button.tag {
         case 1...30: print("button \(button.tag) pushed")
         animateSuperScale(button: button) // анимация при нажатии на кнопку дня в календаре
         selectedDay = trDays[button.tag]
         
-        if selectedDay?.condition == "willcomplete" {
-             performSegue(withIdentifier: "goToTimerController", sender: self)
+        //Если тренировка первого дня не пройдена то другие контроллеры откываеються goToWellDoneController :
+        if trDays[1].condition == "willcomplete" && button.tag != 1 {
+            performSegue(withIdentifier: "goToWellDoneController", sender: self)
         }
-//        if model.Alldays[button.tag].condition == .willcomplete {
-//            performSegue(withIdentifier: "goToTimerController", sender: self)
-//            //print("selected day is \(selectedDay!.condition)")
+        // если тренировка первого дня пройдена то остальные мы открываем как
+//        else if trDays[1].condition != {
+//            
 //        }
-//        else {
-//            performSegue(withIdentifier: "goToWellDoneController", sender: self)
+//        
+            
+        // Если тренировка первого дня не продена и ты пользователь нажимает на первый день:
+        else {
+            performSegue(withIdentifier: "goToTimerController", sender: self)}
+            
+            
+            
+//        else {performSegue(withIdentifier: "goToTimerController", sender: self)}
 //
+//        if selectedDay?.condition == "willcomplete" {
+//             performSegue(withIdentifier: "goToTimerController", sender: self)
+//        } else {
+//            performSegue(withIdentifier: "goToWellDoneController", sender: self)
 //            }
-        
+
         default:
             print("Unknown button")
             return
@@ -107,9 +118,9 @@ class CalendarController: UIViewController {
 //        if segue.identifier == "goToTimerController" {
 //            (segue.destination as! TimerController).actualDay = selectedDay
 //        }
-//        if segue.identifier == "goToWellDoneController" {
-//            (segue.destination as! WellDoneController).actualDay = selectedDay
-//        }
+        if segue.identifier == "goToWellDoneController" {
+            (segue.destination as! WellDoneController).actualDay = selectedDay
+        }
     }
     
     

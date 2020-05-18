@@ -10,7 +10,7 @@ import UIKit
 
 class WellDoneController: UIViewController {
 
-   var actualDay: Day?
+   var actualDay: DayE?
     
     
     @IBOutlet weak var imgRingOut: UIImageView!
