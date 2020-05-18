@@ -12,6 +12,22 @@ import CoreData
 
 
 
+ 
+ var trDays: [DayE] {
+     let request = NSFetchRequest<DayE>(entityName: "DayE")
+     let sd = NSSortDescriptor(key: "dayNum", ascending: true)
+     request.sortDescriptors = [sd]
+     let arrayOfSortedDays = try? CoreDataManager.sharedInstance.managedObjectContext.fetch(request)
+     if arrayOfSortedDays != nil {
+         return arrayOfSortedDays!
+     }
+     
+     return []
+ }
+ 
+ 
+ 
+
 
 
 
@@ -48,4 +64,17 @@ class CoreDataManager {
            }
        }
    }
+    
+    func deleteEcxeededDaysFromCD() {
+        var tempI: Int16 = 9999
+        for i in trDays {
+            print("I want delet \(i)")
+            if i.dayNum == tempI {
+                CoreDataManager.sharedInstance.managedObjectContext.delete(i)
+                
+            }
+            tempI =  i.dayNum
+            CoreDataManager.sharedInstance.saveContext()
+        }
+    }
 }

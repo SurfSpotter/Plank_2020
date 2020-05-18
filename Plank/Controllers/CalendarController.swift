@@ -17,19 +17,23 @@ class CalendarController: UIViewController {
     @IBOutlet var dayButtonsOUt: [UIButton]!
     
     var model = Model()
-    var selectedDay: Day?
+    var selectedDay: DayE?
     var startDate: Date?
     
     
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        let _ = model.createTrainingDays()
-    //model.clearUdDayConditions() //  не работает
-    
-        DayE.newDay(dayNumber: 1)
-        CoreDataManager.sharedInstance.saveContext()
+         //  let _ = model.createTrainingDays()
         
+       
+            
+        for i in trDays {
+            print(i.dayNum)
+        }
         
+        print("trDays: \(trDays.count)")
         
         
     // startDate = Date()
@@ -78,20 +82,20 @@ class CalendarController: UIViewController {
         
         switch button.tag {
         case 1...30: print("button \(button.tag) pushed")
-        //selectedDay = Day(numberDay: button.tag)
+        animateSuperScale(button: button) // анимация при нажатии на кнопку дня в календаре
+        selectedDay = trDays[button.tag]
         
-        // Do something
-        //animateAlertIn()
-        animateSuperScale(button: button)
-        selectedDay = model.Alldays[button.tag]
-        if model.Alldays[button.tag].condition == .willcomplete {
-            performSegue(withIdentifier: "goToTimerController", sender: self)
-            //print("selected day is \(selectedDay!.condition)")
+        if selectedDay?.condition == "willcomplete" {
+             performSegue(withIdentifier: "goToTimerController", sender: self)
         }
-        else {
-            performSegue(withIdentifier: "goToWellDoneController", sender: self)
-            
-            }
+//        if model.Alldays[button.tag].condition == .willcomplete {
+//            performSegue(withIdentifier: "goToTimerController", sender: self)
+//            //print("selected day is \(selectedDay!.condition)")
+//        }
+//        else {
+//            performSegue(withIdentifier: "goToWellDoneController", sender: self)
+//
+//            }
         
         default:
             print("Unknown button")
@@ -100,12 +104,12 @@ class CalendarController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "goToTimerController" {
-            (segue.destination as! TimerController).actualDay = selectedDay
-        }
-        if segue.identifier == "goToWellDoneController" {
-            (segue.destination as! WellDoneController).actualDay = selectedDay
-        }
+//        if segue.identifier == "goToTimerController" {
+//            (segue.destination as! TimerController).actualDay = selectedDay
+//        }
+//        if segue.identifier == "goToWellDoneController" {
+//            (segue.destination as! WellDoneController).actualDay = selectedDay
+//        }
     }
     
     
@@ -211,27 +215,29 @@ class CalendarController: UIViewController {
     }
     
     func setBtnImgFromConditon() {
-        // функция устанавливает нужнную картинку кнопки исходя их состояния текущего дня
+     //    функция устанавливает нужнную картинку кнопки исходя их состояния текущего дня
     for button in dayButtonsOUt {
 //        print(button.tag)
        // print("alldays Count")
       //  print(model.Alldays.count)
-        switch (model.Alldays[(button.tag)].condition) {
-        case .complete :
+        switch (trDays[(button.tag)].condition) {
+        case "complete" :
             button.setBackgroundImage(UIImage(named: "buttonDayComplete"), for: .normal)
-        case .passed :
+        case "passed" :
             button.setBackgroundImage(UIImage(named: "buttonDayPass"), for: .normal)
-        case .rest :
+        case "rest" :
             button.setBackgroundImage(UIImage(named: "buttonDayRest"), for: .normal)
-        case .willcomplete : 
+        case "willcomplete" :
              button.setBackgroundImage(UIImage(named: "blankCircle"), for: .normal)
-            
-        }
+
+        default : "print unknown confition of day"
         }
     }
     
     
    
     
+    
+    }
     
 }
