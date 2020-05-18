@@ -15,6 +15,34 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        
+        // to delete all days from CoreData:
+        /*
+        for i in trDays {
+            CoreDataManager.sharedInstance.managedObjectContext.delete(i)
+            CoreDataManager.sharedInstance.saveContext()
+        }
+        */
+        
+        
+        //       создаем новую базу тренировочных дней в CoreData если она еще не создана
+        if trDays.count < 1 {
+            let _ = DayE.newDay(dayNumber: 0) //  чтобы не сбивались порядковые числа в массива создаем нулевой день
+            let restDays: [Int] = [6, 13, 19, 26]  // Устанавливаем дни отдыха  в календаре
+        for numDay in 1...30 {
+
+           let nd =   DayE.newDay(dayNumber: Int16(clamping: numDay))
+            if restDays.contains(numDay) {
+                nd.condition = "rest"
+            } else {nd.condition = "willcomplete"}
+        }
+        CoreDataManager.sharedInstance.saveContext()
+        }
+        if trDays.count > 31 { CoreDataManager.sharedInstance.deleteEcxeededDaysFromCD()}
+        
+        
+        
         return true
     }
 

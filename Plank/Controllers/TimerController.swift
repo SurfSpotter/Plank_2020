@@ -14,7 +14,7 @@ import MBCircularProgressBar
 
 class TimerController: UIViewController {
 
-    var actualDay: Day?
+    var actualDay: DayE?
     var startDate: Date?
     
     var switchCondition: Bool = UserDefaults.standard.bool(forKey: "TickingSwitchCondition")
@@ -27,7 +27,7 @@ class TimerController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         if let actualDay = actualDay {
-            print(actualDay.number)
+           
         }
         
         
@@ -63,7 +63,7 @@ class TimerController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         print("switchcondition: \(switchCondition)")
         switchOut.isOn = switchCondition
-        print("actual day is: \(actualDay!.number)")
+       // print("actual day is: \(actualDay!.number)")
         
     }
     
