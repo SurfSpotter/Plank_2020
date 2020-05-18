@@ -26,7 +26,11 @@ class CalendarController: UIViewController {
         let _ = model.createTrainingDays()
     //model.clearUdDayConditions() //  не работает
     
-    
+        DayE.newDay(dayNumber: 1)
+        CoreDataManager.sharedInstance.saveContext()
+        
+        
+        
         
     // startDate = Date()
     //  print(startDate)

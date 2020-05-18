@@ -23,7 +23,7 @@ class CoreDataManager {
     }
    lazy var persistentContainer: NSPersistentCloudKitContainer = {
      
-       let container = NSPersistentCloudKitContainer(name: "DataModel")
+       let container = NSPersistentCloudKitContainer(name: "DatModel")
        container.loadPersistentStores(completionHandler: { (storeDescription, error) in
            if let error = error as NSError? {
              

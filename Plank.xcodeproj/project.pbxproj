@@ -13,6 +13,8 @@
 		323B1B202454BD2F0001A55B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 323B1B1F2454BD2F0001A55B /* Assets.xcassets */; };
 		323B1B232454BD2F0001A55B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 323B1B212454BD2F0001A55B /* LaunchScreen.storyboard */; };
 		323CDE3724726DF40078EB4D /* DatModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 323CDE3524726DF40078EB4D /* DatModel.xcdatamodeld */; };
+		323CDE3E24726F500078EB4D /* DayE+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323CDE3C24726F500078EB4D /* DayE+CoreDataClass.swift */; };
+		323CDE3F24726F500078EB4D /* DayE+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323CDE3D24726F500078EB4D /* DayE+CoreDataProperties.swift */; };
 		323EE1D52462B9CD00C23057 /* Montserrat-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 323EE1D32462B9CD00C23057 /* Montserrat-Regular.otf */; };
 		323EE1D62462B9CD00C23057 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 323EE1D42462B9CD00C23057 /* Montserrat-Regular.ttf */; };
 		323EE1D82463BAA100C23057 /* TimerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323EE1D72463BAA100C23057 /* TimerController.swift */; };
@@ -40,6 +42,8 @@
 		323B1B222454BD2F0001A55B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		323B1B242454BD2F0001A55B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		323CDE3624726DF40078EB4D /* DatModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DatModel.xcdatamodel; sourceTree = "<group>"; };
+		323CDE3C24726F500078EB4D /* DayE+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DayE+CoreDataClass.swift"; sourceTree = "<group>"; };
+		323CDE3D24726F500078EB4D /* DayE+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DayE+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		323EE1D32462B9CD00C23057 /* Montserrat-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.otf"; sourceTree = "<group>"; };
 		323EE1D42462B9CD00C23057 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
 		323EE1D72463BAA100C23057 /* TimerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerController.swift; sourceTree = "<group>"; };
@@ -153,6 +157,8 @@
 			children = (
 				327311AB24726AEE00DE2698 /* CoreDataManager.swift */,
 				323CDE3524726DF40078EB4D /* DatModel.xcdatamodeld */,
+				323CDE3C24726F500078EB4D /* DayE+CoreDataClass.swift */,
+				323CDE3D24726F500078EB4D /* DayE+CoreDataProperties.swift */,
 			);
 			name = CoreData;
 			sourceTree = "<group>";
@@ -297,10 +303,12 @@
 				32D45F6024671D3100D2BD72 /* SettingsController.swift in Sources */,
 				326CBDB02469B5BB00026A80 /* AlertView.swift in Sources */,
 				3270DCAC24629038000A8A26 /* Extensions.swift in Sources */,
+				323CDE3E24726F500078EB4D /* DayE+CoreDataClass.swift in Sources */,
 				32D3D5AA245EEC6A003AD54C /* CalendarController.swift in Sources */,
 				323B1B172454BD290001A55B /* AppDelegate.swift in Sources */,
 				323CDE3724726DF40078EB4D /* DatModel.xcdatamodeld in Sources */,
 				327311AC24726AEE00DE2698 /* CoreDataManager.swift in Sources */,
+				323CDE3F24726F500078EB4D /* DayE+CoreDataProperties.swift in Sources */,
 				323B1B192454BD290001A55B /* SceneDelegate.swift in Sources */,
 				323EE1D82463BAA100C23057 /* TimerController.swift in Sources */,
 				3273116A246BD9B000DE2698 /* Model.swift in Sources */,
