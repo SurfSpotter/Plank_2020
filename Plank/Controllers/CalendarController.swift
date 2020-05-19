@@ -20,28 +20,27 @@ class CalendarController: UIViewController {
     var selectedDay: DayE?
     var startDate: Date?
     
-    
 
+    var freeDate = Date() - 86256  - 86256
     
     override func viewDidLoad() {
         super.viewDidLoad()
-         //  let _ = model.createTrainingDays()
+        
         
        
+        
+  
             
         for i in trDays {
             print(i.dayNum)
         }
-        
-        print("trDays: \(trDays.count)")
-        
-     
         
         
     }
     
     override func viewWillAppear(_ animated: Bool) {
         setBtnImgFromConditon()
+      //  model.dateCompareDate(start_Date: trDays[1].dateUpdate, end_Date: <#T##Date?#>)
     }
     
     
@@ -59,13 +58,25 @@ class CalendarController: UIViewController {
         if button.tag == 1 && selectedDay?.condition != "complete"
         {performSegue(withIdentifier: "goToTimerController", sender: self)}
         
-        
-        //2.1
-        if button.tag == 1 && selectedDay?.condition == "complete" {
+        //2
+        else if selectedDay?.dayNum != 1 && trDays[1].condition != "complete" {
             performSegue(withIdentifier: "goToWellDoneController", sender: self)
         }
+         
+        //2.1
+        else if button.tag == 1 && selectedDay?.condition == "complete" {
+            performSegue(withIdentifier: "goToWellDoneController", sender: self)
+        }
+        //2.2
+        else if trDays[1].condition == "complete" && selectedDay?.dayNum != 1 {
+            performSegue(withIdentifier: "goToWellDoneController", sender: self)
+            }
             
-
+        // 3. 3. Первая тренировка пройдена. Дата первой тренировки известна, юзер нажал чтобы начать новый  день
+        else if trDays[1].condition == "complete" && model.dateCompareDate(start_Date: trDays[1].dateUpdate, end_Date: Date()) == 1 {
+            print("1 day after training day")
+            }
+//if trDays[1].condition == "completed" && actualDay?.dayNum != 1 && actualDay?.condition == "rest" {
         default:
             print("Unknown button")
             return
@@ -200,6 +211,7 @@ class CalendarController: UIViewController {
              button.setBackgroundImage(UIImage(named: "blankCircle"), for: .normal)
 
         default : "print unknown confition of day"
+            button.setBackgroundImage(UIImage(named: "blankCircle"), for: .normal)
         }
     }
     

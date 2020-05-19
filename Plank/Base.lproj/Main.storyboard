@@ -1090,6 +1090,7 @@ U1RBUlQgFhYWFhYWFhYWFhYWFhYWFhYWFhY
                     <navigationItem key="navigationItem" id="ird-vJ-54o"/>
                     <connections>
                         <outlet property="bottomLabelOut" destination="XuL-1G-tlt" id="PXb-ME-izX"/>
+                        <outlet property="dayNumOut" destination="IoL-AU-QcQ" id="l1R-C8-vjF"/>
                         <outlet property="imgRingOut" destination="ZZf-4d-9MR" id="BpC-DO-fIp"/>
                         <outlet property="topLabeOut" destination="FgN-uG-HWc" id="o59-py-I9z"/>
                     </connections>

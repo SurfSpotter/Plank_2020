@@ -65,16 +65,41 @@ class Model {
 
                let dateFormatter = DateFormatter()
                dateFormatter.dateFormat = "dd/MM/yyyy"
-               
+    
+    
+              
+    
+    
+    
+    
+    
+    //let result = calendar.compare(start_Date!, to: end_Date!, toGranularity: .day)
+    //xprint("boolCalendar \(calendar.isDateInToday(Date() - 56000))")
+//    print("result: \(result.rawValue)")
+//               let isSameDay = result == .orderedSame
   //             let startDate: Date = dateFormatter.date(from: startDateString)!
   //             let endDate: Date = dateFormatter.date(from: endDateString)!
 
                let gregorian = NSCalendar(calendarIdentifier:NSCalendar.Identifier.gregorian)
-          
+          print("fromCompareFunc: startDate \(start_Date!), endDate\(end_Date!) ")
           if start_Date != nil && end_Date != nil {
-             
-              let components = gregorian?.components(NSCalendar.Unit.day, from: start_Date! , to: end_Date!, options: .matchFirst)
-
+            
+            
+            var calendar = Calendar.current
+            calendar.timeZone = TimeZone.current
+            dateFormatter.timeZone = TimeZone.current
+            
+            let startDay = calendar.component(.day, from: start_Date!)
+             let startMonth = calendar.component(.day, from: start_Date!)
+             let startYear = calendar.component(.day, from: start_Date!)
+            let endDay = calendar.component(.day, from: end_Date!)
+            //let r = calendar.dateComponents( Set<Calendar.Component.day>, from: start_Date!, to: end_Date!)
+            
+            
+            
+            print("result of...\(dateFormatter.string(from: Date()))")
+            let components = gregorian?.components(NSCalendar.Unit.day, from: start_Date! , to: end_Date!, options: .matchFirst)
+            print("compare is:\(components!.day)")
               let day = components?.day
               if day == 0 {
                 return 0
