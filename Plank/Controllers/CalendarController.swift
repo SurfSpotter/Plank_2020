@@ -19,13 +19,11 @@ class CalendarController: UIViewController {
     var model = Model()
     var selectedDay: DayE?
     var startDate: Date?
-    
-
     var freeDate = Date() + (86256 * 12)
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        print("trDaysCount\(trDays.count)")
         
         
         
@@ -34,10 +32,6 @@ class CalendarController: UIViewController {
         print(freeDate)
         print(Date())
   
-            
-        for i in trDays {
-            print(i.dayNum)
-        }
         
         
     }
@@ -57,7 +51,16 @@ class CalendarController: UIViewController {
         case 1...30: print("button \(button.tag) pushed")
         animateSuperScale(button: button) // анимация при нажатии на кнопку дня в календаре
         selectedDay = trDays[button.tag]
-        
+        print("startDate is: \(String(describing: trDays[1].dateUpdate))")
+            
+            
+            
+            
+            
+            
+            
+            
+    /*
         //1
         if button.tag == 1 && selectedDay?.condition != "complete"
         {performSegue(withIdentifier: "goToTimerController", sender: self)}
@@ -79,7 +82,7 @@ class CalendarController: UIViewController {
         // 3. 3. Первая тренировка пройдена. Дата первой тренировки известна, юзер нажал чтобы начать новый  день
         else if trDays[1].condition == "complete" && model.dateCompareDate(start_Date: trDays[1].dateUpdate, end_Date: Date()) == 1 {
             print("1 day after training day")
-            }
+            } */
 //if trDays[1].condition == "completed" && actualDay?.dayNum != 1 && actualDay?.condition == "rest" {
         default:
             print("Unknown button")
@@ -214,7 +217,7 @@ class CalendarController: UIViewController {
         case "willcomplete" :
              button.setBackgroundImage(UIImage(named: "blankCircle"), for: .normal)
 
-        default : "print unknown confition of day"
+        default : //print("print unknown confition of day")
             button.setBackgroundImage(UIImage(named: "blankCircle"), for: .normal)
         }
     }

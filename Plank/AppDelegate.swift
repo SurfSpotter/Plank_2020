@@ -18,13 +18,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         
         // to delete all days from CoreData:
-       /*
+      /*
         for i in trDays {
             CoreDataManager.sharedInstance.managedObjectContext.delete(i)
             CoreDataManager.sharedInstance.saveContext()
         }
+       
         */
-        
         
         //       создаем новую базу тренировочных дней в CoreData если она еще не создана
         if trDays.count < 1 {
