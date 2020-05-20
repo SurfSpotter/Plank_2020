@@ -81,7 +81,7 @@ class Model {
   //             let endDate: Date = dateFormatter.date(from: endDateString)!
 
                let gregorian = NSCalendar(calendarIdentifier:NSCalendar.Identifier.gregorian)
-          print("fromCompareFunc: startDate \(start_Date!), endDate\(end_Date!) ")
+         // print("fromCompareFunc: startDate \(start_Date!), endDate\(end_Date!) ")
           if start_Date != nil && end_Date != nil {
             
             

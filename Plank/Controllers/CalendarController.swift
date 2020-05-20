@@ -21,14 +21,18 @@ class CalendarController: UIViewController {
     var startDate: Date?
     
 
-    var freeDate = Date() - 86256  - 86256
+    var freeDate = Date() + (86256 * 12)
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         
-       
         
+        
+       let dateDiff = freeDate.daysDifference(to: Date())
+        print("DateDiff \(dateDiff)")
+        print(freeDate)
+        print(Date())
   
             
         for i in trDays {
